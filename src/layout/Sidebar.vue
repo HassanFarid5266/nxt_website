@@ -6,13 +6,13 @@
           <h4 class="section-subtitle">Navigate</h4>
           <ul class="menu-list list" type="none">
             <li class="list-item">
-              <router-link to="/about-us" class="list-link"> About </router-link>
+              <router-link to="/about-us" class="list-link" @click="toggleSidebar"> About </router-link>
             </li>
             <li class="list-item">
-              <router-link to="/services" class="list-link"> Services </router-link>
+              <router-link to="/services" class="list-link" @click="toggleSidebar"> Services </router-link>
             </li>
             <li class="list-item">
-              <router-link to="/projects" class="list-link"> Projects </router-link>
+              <router-link to="/projects" class="list-link" @click="toggleSidebar"> Projects </router-link>
             </li>
             <li class="list-item">
               <a href="https://store.nextash.com/" class="list-link" target="_blank">
@@ -20,16 +20,16 @@
               </a>
             </li>
             <li class="list-item">
-              <router-link to="/contact-us" class="list-link"> Contact </router-link>
+              <router-link to="/contact-us" class="list-link" @click="toggleSidebar"> Contact </router-link>
             </li>
             <li class="list-item">
-              <router-link to="/team" class="list-link"> Team </router-link>
+              <router-link to="/team" class="list-link" @click="toggleSidebar"> Team </router-link>
             </li>
             <li class="list-item">
-              <router-link to="/careers" class="list-link"> Career </router-link>
+              <router-link to="/careers" class="list-link" @click="toggleSidebar"> Career </router-link>
             </li>
             <li class="list-item">
-              <router-link to="/blogs" class="list-link"> Blogs </router-link>
+              <router-link to="/blogs" class="list-link" @click="toggleSidebar"> Blogs </router-link>
             </li>
           </ul>
         </div>
@@ -37,16 +37,16 @@
           <h4 class="section-subtitle">Policies</h4>
           <ul class="list policies-list" type="none">
             <li class="list-item">
-              <router-link to="/terms-and-conditions" class="list-link">Terms And Conditions</router-link>
+              <router-link to="/terms-and-conditions" class="list-link" @click="toggleSidebar">Terms And Conditions</router-link>
             </li>
             <li class="list-item">
-              <router-link to="/privacy-policy" class="list-link">Privacy Policy</router-link>
+              <router-link to="/privacy-policy" class="list-link" @click="toggleSidebar">Privacy Policy</router-link>
             </li>
             <li class="list-item">
-              <router-link to="/cookies-policy" class="list-link">Cookies Policy</router-link>
+              <router-link to="/cookies-policy" class="list-link" @click="toggleSidebar">Cookies Policy</router-link>
             </li>
             <li class="list-item">
-              <router-link to="/refunds-policy" class="list-link">Refund Policy</router-link>
+              <router-link to="/refunds-policy" class="list-link" @click="toggleSidebar">Refund Policy</router-link>
             </li>
           </ul>
           <h4 class="section-subtitle">Follow us</h4>
@@ -84,6 +84,12 @@ export default {
         document.body.style.overflowY = 'auto'
         document.documentElement.style.overflowY = 'auto'
       }
+    }
+  },
+  methods: {
+    toggleSidebar() {
+      const sidebarStore = useSidebarStore()
+      sidebarStore.toggle()
     }
   }
 }

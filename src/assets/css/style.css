@@ -10110,6 +10110,29 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   color: var(--text);
 }
 
+.swiper-button-prev:after, .swiper-button-next:after {
+  position: absolute;
+  color: var(--text);
+  z-index: 999;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+  border-radius: 50px;
+  font-size: 1.5rem !important;
+  padding: 0.5rem;
+  background-color: var(--primary);
+  font-family: boxicons !important;
+}
+
+.swiper-button-prev::after {
+  content: "\eb33" !important;
+}
+
+.swiper-button-next::after {
+  content: "\ebe6" !important;
+}
+
 .form-select {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -10398,6 +10421,11 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   display: block;
 }
 
+.footer {
+  background-color: var(--body);
+  position: relative;
+  z-index: 1;
+}
 .footer .footer-top {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -11954,8 +11982,8 @@ svg #airplain {
 .row-team-3x {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 20px auto 20px auto;
-  grid-template-columns: auto auto auto;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 @media (max-width: 992px) {

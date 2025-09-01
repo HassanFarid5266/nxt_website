@@ -7,6 +7,7 @@ import '@/assets/css/style.css';
 import 'aos/dist/aos.css'
 import 'boxicons/css/boxicons.min.css';
 import 'swiper/css';
+import 'swiper/css/navigation'
 // Initialize AOS
 AOS.init()
 
