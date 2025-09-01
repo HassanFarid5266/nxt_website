@@ -1,0 +1,52 @@
+.mission,
+.ideology,
+.perks,
+.process,
+.vision,
+.story,
+.blogs,
+.who-we-are,
+.services,
+.team,
+.feedbacks-multiple,
+.feedbacks,
+.clients,
+.why-choose-us,
+.case-studies,
+.jobs {
+  .section-center {
+    margin-bottom: 60px;
+  }
+
+  margin-bottom: 160px;
+
+  @media (max-width: screen-size(xxl)) {
+    margin-bottom: 120px;
+  }
+
+  @media (max-width: screen-size(lg)) {
+    margin-bottom: 150px;
+  }
+  @media (max-width: screen-size(sm)) {
+    margin-bottom: 80px;
+  }
+}
+
+.service {
+  margin-top: 200px;
+  .row-cols-2 {
+    margin-bottom: 170px;
+    @media (max-width: screen-size(xxl)) {
+      margin-bottom: 130px;
+    }
+    @media (max-width: screen-size(xl)) {
+      margin-bottom: 200px;
+    }
+    @media (max-width: screen-size(lg)) {
+      margin-bottom: 160px;
+    }
+  }
+  @media (max-width: screen-size(lg)) {
+    margin-top: 250px;
+  }
+}

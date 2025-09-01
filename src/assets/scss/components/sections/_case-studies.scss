@@ -1,0 +1,41 @@
+.case-studies {
+  .section-center {
+    margin-bottom: 130px;
+
+    @media (max-width: screen-size(xl)) {
+      margin-bottom: 130px;
+    }
+    @media (max-width: screen-size(sm)) {
+      margin-bottom: 100px;
+    }
+  }
+
+  .card-body {
+    background-color: rgba(0, 0, 0, 1);
+  }
+
+  .card-case-study:nth-child(odd) {
+    .card-head {
+      order: 2;
+    }
+    .card-body {
+      order: 1;
+    }
+
+    @media (max-width: screen-size(lg)) {
+      .card-head {
+        order: 1;
+        padding-bottom: 80px;
+      }
+      .card-body {
+        order: 2;
+      }
+    }
+  }
+
+  .card-case-study:last-child {
+    @media (max-width: screen-size(sm)) {
+      margin-bottom: 20px;
+    }
+  }
+}

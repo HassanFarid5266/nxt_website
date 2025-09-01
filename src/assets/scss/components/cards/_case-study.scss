@@ -1,0 +1,106 @@
+.card-case-study {
+  --card-head-w: 45%;
+  --card-body-w: 45%;
+  --card-head-p: 0;
+  --card-bc: transparent;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15%;
+  background-position: bottom left;
+  background-attachment: fixed;
+
+  .card-head {
+    background-color: transparent;
+    position: relative;
+    z-index: 5;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    backdrop-filter: var(--card-b);
+
+    .product-image {
+      border-radius: var(--rounded);
+      padding: 2px;
+      backdrop-filter: var(--card-b);
+      box-shadow: var(--shadow);
+      box-shadow: rgba(255, 30, 0, 0.24) 0px 8px 24px,
+        rgba(255, 38, 0, 0.158) 0px 16px 56px,
+        rgba(235, 6, 25, 0.233) 0px 24px 80px;
+      position: absolute;
+      z-index: 2;
+      img {
+        object-fit: cover;
+        object-position: top;
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+      }
+      &:nth-child(1) {
+        width: 270px;
+        height: 234px;
+        margin-top: -48px;
+        margin-left: 237px;
+        @media (max-width: screen-size(sm)) {
+          width: 203px;
+          height: 191px;
+          margin-top: 94px;
+          margin-left: -110px;
+        }
+      }
+      &:nth-child(2) {
+        width: 310px;
+        height: 300px;
+        margin-left: 150px;
+        margin-bottom: -100px;
+        @media (max-width: screen-size(sm)) {
+          margin-left: 45px;
+          margin-bottom: -155px;
+          width: 200px;
+          height: 210px;
+        }
+      }
+      &:nth-child(3) {
+        width: 290px;
+        height: 210px;
+        margin-top: -187px;
+        margin-left: 80px;
+        @media (max-width: screen-size(sm)) {
+          width: 240px;
+          height: 210px;
+          margin-top: -80px;
+          margin-left: -80px;
+        }
+      }
+      &:nth-child(4) {
+        width: 290px;
+        height: 210px;
+        @media (max-width: screen-size(sm)) {
+          width: 280px;
+          height: 200px;
+          margin-left: -36px;
+          margin-top: 69px;
+        }
+      }
+    }
+    @media (max-width: screen-size(lg)) {
+      margin-left: auto;
+    }
+  }
+  .card-body {
+    backdrop-filter: blur(50px);
+    border: 4px solid var(--dark);
+    border-radius: var(--card-br);
+    @media (max-width: screen-size(sm)) {
+      margin-top: 40px;
+    }
+  }
+
+  @media (max-width: screen-size(lg)) {
+    flex-direction: column;
+    margin-bottom: 150px;
+    --card-head-w: 70%;
+    --card-head-h: 300px;
+    --card-body-w: 100%;
+  }
+}

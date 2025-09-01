@@ -1,0 +1,105 @@
+.connect {
+  position: fixed;
+  right: 15px;
+  bottom: 20px;
+  z-index: 99999;
+
+  .connect-btn {
+    background-color: var(--primary);
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem;
+    box-shadow: 0 0 0 0 #ff0000;
+    animation: connect 2s infinite;
+    pointer-events: all;
+    &:hover {
+      background-color: var(--primary-hover);
+    }
+  }
+
+  input[type="checkbox"] {
+    height: 0;
+    width: 0;
+    display: none;
+  }
+  label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50rem;
+      cursor: pointer;
+    }
+  }
+
+  .connect-items {
+    display: none;
+    gap: 10px;
+    align-items: center;
+    transition: 0.3s;
+    .connect-item {
+      font-size: 2rem;
+      padding: 0.8rem;
+      transition: 0.3s;
+      box-shadow: var(--shadow);
+      display: inline-block;
+      text-decoration: none;
+      border-radius: 50px;
+      cursor: pointer;
+
+      &.whatsapp {
+        background-color: #30aa21;
+        color: #fff;
+        &:focus,
+        &:hover {
+          background-color: #249315;
+        }
+      }
+      &.messenger {
+        background-color: #0e71ee;
+        color: #fff;
+        &:focus,
+        &:hover {
+          background-color: #1b6acb;
+        }
+      }
+      &.email,
+      &.phone {
+        background-color: #fff;
+        color: #000;
+        &:focus,
+        &:hover {
+          color: var(--primary);
+        }
+      }
+    }
+  }
+}
+
+.connect input:checked + label .connect-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes connect {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 82, 82, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 20px rgba(255, 82, 82, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);
+  }
+}

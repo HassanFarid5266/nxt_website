@@ -1,0 +1,22 @@
+.feedbacks {
+  position: relative;
+  .bxs-quote-right,
+  .bxs-quote-left {
+    position: absolute;
+    z-index: 99;
+    font-size: 80px;
+    color: var(--primary);
+  }
+  .bxs-quote-right {
+    right: 0;
+    bottom: 0;
+  }
+  .bxs-quote-left {
+    left: 0;
+  }
+  @media (max-width: screen-size(sm)) {
+    .bxs-quote-left {
+      font-size: 60px;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.card-team {
+  --card-body-h: auto;
+  --card-image-w: 200px;
+  --card-image-h: 200px;
+  --card-image-br: 50%;
+  text-align: center;
+  .card-image {
+    overflow: hidden;
+    background-color: var(--dark);
+    margin: 20px auto 0px auto;
+    padding: 1rem;
+    border-left: 3px solid var(--primary);
+    border-right: 3px solid var(--primary);
+  }
+}
+
+.card-ceo {
+  --card-image-w: 280px;
+  --card-image-h: 280px;
+  flex-direction: row;
+  align-items: center;
+  @media (max-width: screen-size(lg)) {
+    flex-direction: column;
+  }
+  .card-body {
+    text-align: left;
+  }
+}

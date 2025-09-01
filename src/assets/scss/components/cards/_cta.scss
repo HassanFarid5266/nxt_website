@@ -1,0 +1,36 @@
+.card-cta {
+  --card-h: auto;
+  --card-bg: var(--body);
+  --card-bc: var(--primary);
+  --card-bs: transparent;
+  --card-title-fs: 2rem;
+  --card-title-lh: 2.8rem;
+  --card-bc: var(--primary);
+  --card-m: 60px auto 60px auto;
+  --card-body-m: 4rem 1rem;
+  text-align: center;
+  border-width: 2px;
+  .btn-contact {
+    background-color: var(--primary);
+    color: white;
+    cursor: pointer;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 20px;
+    display: inline-block;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition: border 0.5s, background 0.5s, color 0.2s;
+
+    &:hover {
+      background-color: transparent;
+      color: white;
+      border: 2px solid var(--primary);
+    }
+  }
+  @media (max-width: screen-size(sm)) {
+  --card-body-p: 3rem 1rem;
+  }
+}

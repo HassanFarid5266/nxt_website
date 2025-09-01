@@ -1,0 +1,18 @@
+.card-about {
+  --card-body-p: 3rem 1rem;
+  --card-title-fs: clamp(30px, 80vw, 40px);
+  text-align: center;
+  .card-body {
+    width: clamp(320px, 80vw, 1100px);
+    margin: auto;
+    .section-badge {
+      margin-bottom: 20px;
+    }
+    @media (max-width: screen-size(sm)) {
+      .card-title {
+        font-size: 28px;
+        line-height: 40px;
+      }
+    }
+  }
+}

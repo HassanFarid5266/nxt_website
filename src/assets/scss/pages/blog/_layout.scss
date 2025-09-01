@@ -1,0 +1,17 @@
+.blog {
+  width: clamp(320px, 80vw, 1000px);
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  z-index: 10;
+  margin-bottom: 100px;
+  .section-badge{
+    margin-bottom: 30px;
+  }
+
+  .section-title {
+    @media (max-width: screen-size(sm)) {
+      font-size: clamp(20px, 80vw, 25px);
+    }
+  }
+}

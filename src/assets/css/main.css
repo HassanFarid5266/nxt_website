@@ -1,0 +1,30 @@
+/* Import Boxicons */
+@import url('https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css');
+
+/* Import compiled CSS */
+@import '../dist/css/nextash_website_v2.bundle.KVKTXMGA.css';
+
+/* Import AOS CSS */
+@import 'aos/dist/aos.css';
+
+/* Custom styles for Vue.js specific elements */
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+
+/* Ensure router-link styling matches original links */
+a.router-link-active {
+  color: inherit;
+  text-decoration: none;
+}
+
+a.router-link-exact-active {
+  color: inherit;
+  text-decoration: none;
+}

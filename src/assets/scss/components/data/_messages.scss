@@ -1,0 +1,21 @@
+.msg-success,
+.msg-danger,
+.msg-warning {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: clamp(14px, 80vw, 16px);
+  line-height: clamp(20px, 80vw, 26px);
+  &:empty {
+    display: none;
+  }
+}
+
+.msg-success {
+  color: var(--success);
+}
+.msg-danger {
+  color: var(--danger);
+}
+.msg-warning {
+  color: var(--warning);
+}

@@ -1,0 +1,10 @@
+.card-service {
+  --card-body-m: 0 2rem;
+  --card-foot-m: 2rem 2rem 3rem 2rem;
+
+  @media (max-width: screen-size(sm)) {
+    .btn-outline {
+      margin-bottom: 20px;
+    }
+  }
+}
