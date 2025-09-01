@@ -48,9 +48,9 @@
 </template>
 
 <script>
-import Navbar from '@/components/Navbar.vue'
-import Sidebar from '@/components/Sidebar.vue'
-import Footer from '@/components/Footer.vue'
+import Navbar from '@/layout/Navbar.vue'
+import Sidebar from '@/layout/Sidebar.vue'
+import Footer from '@/layout/Footer.vue'
 
 export default {
   name: 'App',
@@ -83,7 +83,3 @@ export default {
   }
 }
 </script>
-
-<style>
-@import '@/assets/css/main.css';
-</style>

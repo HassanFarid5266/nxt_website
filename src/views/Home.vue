@@ -131,7 +131,8 @@
 						d="M394.1-214.9c-49.7,89.4,114.4,192.8,175.5,475.1c13,60.1,85.4,424-98.1,552.6 c-95.7,67-267.2,74.5-346.3-22.1c-70.8-86.5-49-233.9,19.2-305.2c102.4-107,353.9-89.1,593.2,96.5c139.6,107,294.1,258.4,415,468.6 c19.2,33.5,36.6,66.6,52.3,99.3c13,8.6,34,19.5,53.3,13.2c148-48.6,165.1-1094.5-338.5-1374.8C723.7-320.8,449-313.8,394.1-214.9z">
 					</path>
 					<path id="airplain" d="M8.04 84L92 48 8.04 12 8 40l60 8-60 8z">
-						<animateMotion xlink:href="#airplain" dur="6s" fill="freeze" repeatCount="indefinite" rotate="auto">
+						<animateMotion xlink:href="#airplain" dur="6s" fill="freeze" repeatCount="indefinite"
+							rotate="auto">
 							<mpath xlink:href="#followPath"></mpath>
 						</animateMotion>
 					</path>
@@ -150,12 +151,10 @@
 							<div class="square-1"></div>
 							<div class="square-2"></div>
 							<div class="image-lg">
-								<img src="@/assets/images/about/6.webp" class="image lazy-load"
-									alt="Our Story" />
+								<img src="@/assets/images/about/6.webp" class="image lazy-load" alt="Our Story" />
 							</div>
 							<div class="image-sm">
-								<img src="@/assets/images/about/7.webp" class="image lazy-load"
-									alt="Our Story" />
+								<img src="@/assets/images/about/7.webp" class="image lazy-load" alt="Our Story" />
 							</div>
 						</div>
 					</div>
@@ -174,7 +173,8 @@
 							businesses to focus on what they do best – serving their customers
 							and growing their bottom line...
 						</p>
-						<router-link to="/about-us" class="btn-outline know-more"> Interested in reading more of our story?</router-link>
+						<router-link to="/about-us" class="btn-outline know-more"> Interested in reading more of our
+							story?</router-link>
 					</div>
 				</div>
 			</div>
@@ -285,7 +285,121 @@
 		<!--SERVICES-->
 
 		<div class="design">
-			<!-- Decorative SVG preserved -->
+			<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+				xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 800 800" opacity="0.21">
+				<defs>
+					<linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="rrreflection-grad">
+						<stop stop-color="#121212" stop-opacity="1" offset="45%"></stop>
+						<stop stop-color="#ff0000" stop-opacity="1" offset="100%"></stop>
+					</linearGradient>
+					<linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="rrreflection-grad-2">
+						<stop stop-color="#ff0000" stop-opacity="1" offset="0%"></stop>
+						<stop stop-color="#121212" stop-opacity="1" offset="45%"></stop>
+					</linearGradient>
+					<linearGradient gradientTransform="rotate(270)" x1="50%" y1="0%" x2="50%" y2="100%"
+						id="rrreflection-grad-3">
+						<stop stop-color="#121212" stop-opacity="1" offset="45%"></stop>
+						<stop stop-color="#ff0000" stop-opacity="1" offset="100%"></stop>
+					</linearGradient>
+					<linearGradient gradientTransform="rotate(270)" x1="50%" y1="0%" x2="50%" y2="100%"
+						id="rrreflection-grad-4">
+						<stop stop-color="#ff0000" stop-opacity="1" offset="0%"></stop>
+						<stop stop-color="#121212" stop-opacity="1" offset="45%"></stop>
+					</linearGradient>
+				</defs>
+				<g stroke-width="1" stroke="url(#rrreflection-grad)" fill="none">
+					<circle r="346.5" cx="50%" cy="0"></circle>
+					<circle r="330" cx="50%" cy="0"></circle>
+					<circle r="313.5" cx="50%" cy="0"></circle>
+					<circle r="297" cx="50%" cy="0"></circle>
+					<circle r="280.5" cx="50%" cy="0"></circle>
+					<circle r="264" cx="50%" cy="0"></circle>
+					<circle r="247.5" cx="50%" cy="0"></circle>
+					<circle r="231" cx="50%" cy="0"></circle>
+					<circle r="214.5" cx="50%" cy="0"></circle>
+					<circle r="198" cx="50%" cy="0"></circle>
+					<circle r="181.5" cx="50%" cy="0"></circle>
+					<circle r="165" cx="50%" cy="0"></circle>
+					<circle r="148.5" cx="50%" cy="0"></circle>
+					<circle r="132" cx="50%" cy="0"></circle>
+					<circle r="115.5" cx="50%" cy="0"></circle>
+					<circle r="99" cx="50%" cy="0"></circle>
+					<circle r="82.5" cx="50%" cy="0"></circle>
+					<circle r="66" cx="50%" cy="0"></circle>
+					<circle r="49.5" cx="50%" cy="0"></circle>
+					<circle r="33" cx="50%" cy="0"></circle>
+					<circle r="16.5" cx="50%" cy="0"></circle>
+				</g>
+				<g stroke-width="1" stroke="url(#rrreflection-grad-2)" fill="none">
+					<circle r="346.5" cx="50%" cy="100%"></circle>
+					<circle r="330" cx="50%" cy="100%"></circle>
+					<circle r="313.5" cx="50%" cy="100%"></circle>
+					<circle r="297" cx="50%" cy="100%"></circle>
+					<circle r="280.5" cx="50%" cy="100%"></circle>
+					<circle r="264" cx="50%" cy="100%"></circle>
+					<circle r="247.5" cx="50%" cy="100%"></circle>
+					<circle r="231" cx="50%" cy="100%"></circle>
+					<circle r="214.5" cx="50%" cy="100%"></circle>
+					<circle r="198" cx="50%" cy="100%"></circle>
+					<circle r="181.5" cx="50%" cy="100%"></circle>
+					<circle r="165" cx="50%" cy="100%"></circle>
+					<circle r="148.5" cx="50%" cy="100%"></circle>
+					<circle r="132" cx="50%" cy="100%"></circle>
+					<circle r="115.5" cx="50%" cy="100%"></circle>
+					<circle r="99" cx="50%" cy="100%"></circle>
+					<circle r="82.5" cx="50%" cy="100%"></circle>
+					<circle r="66" cx="50%" cy="100%"></circle>
+					<circle r="49.5" cx="50%" cy="100%"></circle>
+					<circle r="33" cx="50%" cy="100%"></circle>
+					<circle r="16.5" cx="50%" cy="100%"></circle>
+				</g>
+				<g stroke-width="1" stroke="url(#rrreflection-grad-3)" fill="none">
+					<circle r="346.5" cx="0" cy="50%"></circle>
+					<circle r="330" cx="0" cy="50%"></circle>
+					<circle r="313.5" cx="0" cy="50%"></circle>
+					<circle r="297" cx="0" cy="50%"></circle>
+					<circle r="280.5" cx="0" cy="50%"></circle>
+					<circle r="264" cx="0" cy="50%"></circle>
+					<circle r="247.5" cx="0" cy="50%"></circle>
+					<circle r="231" cx="0" cy="50%"></circle>
+					<circle r="214.5" cx="0" cy="50%"></circle>
+					<circle r="198" cx="0" cy="50%"></circle>
+					<circle r="181.5" cx="0" cy="50%"></circle>
+					<circle r="165" cx="0" cy="50%"></circle>
+					<circle r="148.5" cx="0" cy="50%"></circle>
+					<circle r="132" cx="0" cy="50%"></circle>
+					<circle r="115.5" cx="0" cy="50%"></circle>
+					<circle r="99" cx="0" cy="50%"></circle>
+					<circle r="82.5" cx="0" cy="50%"></circle>
+					<circle r="66" cx="0" cy="50%"></circle>
+					<circle r="49.5" cx="0" cy="50%"></circle>
+					<circle r="33" cx="0" cy="50%"></circle>
+					<circle r="16.5" cx="0" cy="50%"></circle>
+				</g>
+				<g stroke-width="1" stroke="url(#rrreflection-grad-4)" fill="none">
+					<circle r="346.5" cx="100%" cy="50%"></circle>
+					<circle r="330" cx="100%" cy="50%"></circle>
+					<circle r="313.5" cx="100%" cy="50%"></circle>
+					<circle r="297" cx="100%" cy="50%"></circle>
+					<circle r="280.5" cx="100%" cy="50%"></circle>
+					<circle r="264" cx="100%" cy="50%"></circle>
+					<circle r="247.5" cx="100%" cy="50%"></circle>
+					<circle r="231" cx="100%" cy="50%"></circle>
+					<circle r="214.5" cx="100%" cy="50%"></circle>
+					<circle r="198" cx="100%" cy="50%"></circle>
+					<circle r="181.5" cx="100%" cy="50%"></circle>
+					<circle r="165" cx="100%" cy="50%"></circle>
+					<circle r="148.5" cx="100%" cy="50%"></circle>
+					<circle r="132" cx="100%" cy="50%"></circle>
+					<circle r="115.5" cx="100%" cy="50%"></circle>
+					<circle r="99" cx="100%" cy="50%"></circle>
+					<circle r="82.5" cx="100%" cy="50%"></circle>
+					<circle r="66" cx="100%" cy="50%"></circle>
+					<circle r="49.5" cx="100%" cy="50%"></circle>
+					<circle r="33" cx="100%" cy="50%"></circle>
+					<circle r="16.5" cx="100%" cy="50%"></circle>
+				</g>
+			</svg>
 		</div>
 
 		<!-- PROJECTS -->
@@ -296,7 +410,8 @@
 					<h3 class="section-title">Brief 2 of 200+</h3>
 				</div>
 				<div class="case-studies">
-					<article class="card card-case-study " v-for="project in projects" :key="project.id" data-aos-duration="1000" data-aos="fade-down" data-aos-once="true">
+					<article class="card card-case-study " v-for="project in projects" :key="project.id"
+						data-aos-duration="1000" data-aos="fade-down" data-aos-once="true">
 						<div class="card-head">
 							<div class="product-image" v-for="(img, idx) in project.images" :key="idx">
 								<img :src="img" class="image lazy-load" :alt="project.name" />
@@ -325,17 +440,17 @@
 					<h3 class="section-title">Our Leadership</h3>
 				</div>
 				<div class="row-team-3x">
-					<div class="col" v-for="member in employees" :key="member.id" data-aos-duration="1000" data-aos="zoom-in" data-aos-once="true"
-						data-aos-easing="ease-in-out">
+					<div class="col" v-for="member in employees" :key="member.id" data-aos-duration="1000"
+						data-aos="zoom-in" data-aos-once="true" data-aos-easing="ease-in-out">
 						<article class="card card-team card-hoverable">
 							<a class="card-image" href="javascript:void(0)">
-								<img :data-src="member.image" :src="member.image"  class="image lazy-load" />
+								<img :data-src="member.image" :src="member.image" class="image lazy-load" />
 							</a>
 							<div class="card-body">
 								<h3 class="card-title">
-									<a href="javascript:void(0)">{{member.firstName}} {{member.lastName}}</a>
+									<a href="javascript:void(0)">{{ member.firstName }} {{ member.lastName }}</a>
 								</h3>
-								<p class="card-desc">{{member.designation}}</p>
+								<p class="card-desc">{{ member.designation }}</p>
 							</div>
 						</article>
 					</div>
@@ -347,10 +462,6 @@
 		</section>
 		<!-- TEAM -->
 
-		<div class="design">
-			<!-- Decorative SVG preserved -->
-		</div>
-
 		<!-- FEEDBACKS -->
 		<section class="feedbacks-multiple">
 			<div class="boxed ">
@@ -360,11 +471,13 @@
 				</div>
 				<br><br>
 				<div class="row-feedbacks">
-					<article class="col" v-for="(item, index) in testimonials" :key="index" data-aos-duration="1000" :data-aos="item.animation" data-aos-once="true" data-aos-easing="linear">
+					<article class="col" v-for="(item, index) in testimonials" :key="index" data-aos-duration="1000"
+						:data-aos="item.animation" data-aos-once="true" data-aos-easing="linear">
 						<div class="card card-feedback active">
 							<div class="card-head">
 								<div class="card-image">
-									<img :src="item.image" class="image lazy-load" width="100" height="100" :alt="item.full_name" />
+									<img :src="item.image" class="image lazy-load" width="100" height="100"
+										:alt="item.full_name" />
 								</div>
 							</div>
 							<div class="card-body">
@@ -385,7 +498,121 @@
 		<!-- FEEDBACKS -->
 
 		<div class="design">
-			<!-- Decorative SVG preserved -->
+			<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+				xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 800 800" opacity="0.21">
+				<defs>
+					<linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="rrreflection-grad">
+						<stop stop-color="#121212" stop-opacity="1" offset="45%"></stop>
+						<stop stop-color="#ff0000" stop-opacity="1" offset="100%"></stop>
+					</linearGradient>
+					<linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="rrreflection-grad-2">
+						<stop stop-color="#ff0000" stop-opacity="1" offset="0%"></stop>
+						<stop stop-color="#121212" stop-opacity="1" offset="45%"></stop>
+					</linearGradient>
+					<linearGradient gradientTransform="rotate(270)" x1="50%" y1="0%" x2="50%" y2="100%"
+						id="rrreflection-grad-3">
+						<stop stop-color="#121212" stop-opacity="1" offset="45%"></stop>
+						<stop stop-color="#ff0000" stop-opacity="1" offset="100%"></stop>
+					</linearGradient>
+					<linearGradient gradientTransform="rotate(270)" x1="50%" y1="0%" x2="50%" y2="100%"
+						id="rrreflection-grad-4">
+						<stop stop-color="#ff0000" stop-opacity="1" offset="0%"></stop>
+						<stop stop-color="#121212" stop-opacity="1" offset="45%"></stop>
+					</linearGradient>
+				</defs>
+				<g stroke-width="1" stroke="url(#rrreflection-grad)" fill="none">
+					<circle r="346.5" cx="50%" cy="0"></circle>
+					<circle r="330" cx="50%" cy="0"></circle>
+					<circle r="313.5" cx="50%" cy="0"></circle>
+					<circle r="297" cx="50%" cy="0"></circle>
+					<circle r="280.5" cx="50%" cy="0"></circle>
+					<circle r="264" cx="50%" cy="0"></circle>
+					<circle r="247.5" cx="50%" cy="0"></circle>
+					<circle r="231" cx="50%" cy="0"></circle>
+					<circle r="214.5" cx="50%" cy="0"></circle>
+					<circle r="198" cx="50%" cy="0"></circle>
+					<circle r="181.5" cx="50%" cy="0"></circle>
+					<circle r="165" cx="50%" cy="0"></circle>
+					<circle r="148.5" cx="50%" cy="0"></circle>
+					<circle r="132" cx="50%" cy="0"></circle>
+					<circle r="115.5" cx="50%" cy="0"></circle>
+					<circle r="99" cx="50%" cy="0"></circle>
+					<circle r="82.5" cx="50%" cy="0"></circle>
+					<circle r="66" cx="50%" cy="0"></circle>
+					<circle r="49.5" cx="50%" cy="0"></circle>
+					<circle r="33" cx="50%" cy="0"></circle>
+					<circle r="16.5" cx="50%" cy="0"></circle>
+				</g>
+				<g stroke-width="1" stroke="url(#rrreflection-grad-2)" fill="none">
+					<circle r="346.5" cx="50%" cy="100%"></circle>
+					<circle r="330" cx="50%" cy="100%"></circle>
+					<circle r="313.5" cx="50%" cy="100%"></circle>
+					<circle r="297" cx="50%" cy="100%"></circle>
+					<circle r="280.5" cx="50%" cy="100%"></circle>
+					<circle r="264" cx="50%" cy="100%"></circle>
+					<circle r="247.5" cx="50%" cy="100%"></circle>
+					<circle r="231" cx="50%" cy="100%"></circle>
+					<circle r="214.5" cx="50%" cy="100%"></circle>
+					<circle r="198" cx="50%" cy="100%"></circle>
+					<circle r="181.5" cx="50%" cy="100%"></circle>
+					<circle r="165" cx="50%" cy="100%"></circle>
+					<circle r="148.5" cx="50%" cy="100%"></circle>
+					<circle r="132" cx="50%" cy="100%"></circle>
+					<circle r="115.5" cx="50%" cy="100%"></circle>
+					<circle r="99" cx="50%" cy="100%"></circle>
+					<circle r="82.5" cx="50%" cy="100%"></circle>
+					<circle r="66" cx="50%" cy="100%"></circle>
+					<circle r="49.5" cx="50%" cy="100%"></circle>
+					<circle r="33" cx="50%" cy="100%"></circle>
+					<circle r="16.5" cx="50%" cy="100%"></circle>
+				</g>
+				<g stroke-width="1" stroke="url(#rrreflection-grad-3)" fill="none">
+					<circle r="346.5" cx="0" cy="50%"></circle>
+					<circle r="330" cx="0" cy="50%"></circle>
+					<circle r="313.5" cx="0" cy="50%"></circle>
+					<circle r="297" cx="0" cy="50%"></circle>
+					<circle r="280.5" cx="0" cy="50%"></circle>
+					<circle r="264" cx="0" cy="50%"></circle>
+					<circle r="247.5" cx="0" cy="50%"></circle>
+					<circle r="231" cx="0" cy="50%"></circle>
+					<circle r="214.5" cx="0" cy="50%"></circle>
+					<circle r="198" cx="0" cy="50%"></circle>
+					<circle r="181.5" cx="0" cy="50%"></circle>
+					<circle r="165" cx="0" cy="50%"></circle>
+					<circle r="148.5" cx="0" cy="50%"></circle>
+					<circle r="132" cx="0" cy="50%"></circle>
+					<circle r="115.5" cx="0" cy="50%"></circle>
+					<circle r="99" cx="0" cy="50%"></circle>
+					<circle r="82.5" cx="0" cy="50%"></circle>
+					<circle r="66" cx="0" cy="50%"></circle>
+					<circle r="49.5" cx="0" cy="50%"></circle>
+					<circle r="33" cx="0" cy="50%"></circle>
+					<circle r="16.5" cx="0" cy="50%"></circle>
+				</g>
+				<g stroke-width="1" stroke="url(#rrreflection-grad-4)" fill="none">
+					<circle r="346.5" cx="100%" cy="50%"></circle>
+					<circle r="330" cx="100%" cy="50%"></circle>
+					<circle r="313.5" cx="100%" cy="50%"></circle>
+					<circle r="297" cx="100%" cy="50%"></circle>
+					<circle r="280.5" cx="100%" cy="50%"></circle>
+					<circle r="264" cx="100%" cy="50%"></circle>
+					<circle r="247.5" cx="100%" cy="50%"></circle>
+					<circle r="231" cx="100%" cy="50%"></circle>
+					<circle r="214.5" cx="100%" cy="50%"></circle>
+					<circle r="198" cx="100%" cy="50%"></circle>
+					<circle r="181.5" cx="100%" cy="50%"></circle>
+					<circle r="165" cx="100%" cy="50%"></circle>
+					<circle r="148.5" cx="100%" cy="50%"></circle>
+					<circle r="132" cx="100%" cy="50%"></circle>
+					<circle r="115.5" cx="100%" cy="50%"></circle>
+					<circle r="99" cx="100%" cy="50%"></circle>
+					<circle r="82.5" cx="100%" cy="50%"></circle>
+					<circle r="66" cx="100%" cy="50%"></circle>
+					<circle r="49.5" cx="100%" cy="50%"></circle>
+					<circle r="33" cx="100%" cy="50%"></circle>
+					<circle r="16.5" cx="100%" cy="50%"></circle>
+				</g>
+			</svg>
 		</div>
 
 		<!-- CLIENTS -->
@@ -395,8 +622,8 @@
 				<h3 class="section-title">Our Partial Client List</h3>
 				<br><br>
 				<article class="row-clients">
-					<div class="col" v-for="(logo, index) in clients" :key="index" data-aos-duration="1000" data-aos="fade-up" data-aos-once="true"
-						data-aos-easing="ease-in-out">
+					<div class="col" v-for="(logo, index) in clients" :key="index" data-aos-duration="1000"
+						data-aos="fade-up" data-aos-once="true" data-aos-easing="ease-in-out">
 						<img :src="logo" class="image-full grayscale lazy-load" alt="" />
 					</div>
 				</article>
@@ -429,7 +656,7 @@
 									<br>
 									<h3 class="card-title text-ellipsis text-ellipsis-1">
 										<a :href="`/blog-post/${blog.slug}`">
-											{{ blog.title}}
+											{{ blog.title }}
 										</a>
 									</h3>
 									<p class="card-desc text-ellipsis text-ellipsis-3">
@@ -470,34 +697,35 @@ export default {
 					name: 'E-commerce Platform',
 					category: 'E-commerce',
 					description: 'Modern online store with advanced features',
-					images: ['@/assets/images/projects/1.webp','@/assets/images/projects/2.webp','@/assets/images/projects/3.webp','@/assets/images/projects/4.webp']
+					images: ['/src/assets/images/projects/1.webp', '/src/assets/images/projects/2.webp', '/src/assets/images/projects/3.webp', '/src/assets/images/projects/4.webp']
 				},
 				{
 					id: 2,
 					name: 'Project Management SaaS',
 					category: 'SaaS',
 					description: 'Comprehensive project management tool for teams',
-					images: ['@/assets/images/projects/5.webp','@/assets/images/projects/6.webp','@/assets/images/projects/7.webp','@/assets/images/projects/8.webp']
+					images: ['/src/assets/images/projects/5.webp', '/src/assets/images/projects/6.webp', '/src/assets/images/projects/7.webp', '/src/assets/images/projects/8.webp']
 				}
 			],
 			employees: [
-				{ id: 1, firstName: 'Abdullah', lastName: 'Arshad', designation: 'Chief Operating Officer (COO)', image: '@/assets/images/team/abdullah.webp' },
-				{ id: 2, firstName: 'Faisal', lastName: '', designation: 'CEO & Founder', image: '@/assets/images/faisal.webp' },
-				{ id: 3, firstName: 'Team', lastName: 'Lead', designation: 'Lead Developer', image: '@/assets/images/team/3.webp' }
+				{ id: 1, firstName: 'Abdullah', lastName: 'Arshad', designation: 'Chief Operating Officer (COO)', image: '/src/assets/images/team/abdullah.webp' },
+				{ id: 2, firstName: 'Faisal', lastName: '', designation: 'CEO & Founder', image: '/src/assets/images/faisal.webp' },
+				{ id: 3, firstName: 'Team', lastName: 'Lead', designation: 'Lead Developer', image: '/src/assets/images/team/3.webp' }
 			],
 			testimonials: [
-				{ full_name: 'John Smith', designation: 'CEO, TechCorp', image: '@/assets/images/feedbacks/1.webp', animation: 'fade-up', feedback: 'Thanks to NexTash, our organization underwent a seamless digital transformation, enhancing efficiency and accelerating our reporting processes. Their expertise in digitalization not only streamlined our operations but also provided us with valuable insights for strategic decision-making. NexTash\'s solutions have truly revolutionized the way we operate, allowing us to stay ahead in today\'s fast-paced business environment.', stars: 5 },
-				{ full_name: 'Sarah Johnson', designation: 'Marketing Director, GrowthCo', image: '@/assets/images/feedbacks/2.webp', animation: 'zoom-in', feedback: 'They delivered beyond our expectations.', stars: 5 },
-				{ full_name: 'Mike Chen', designation: 'CTO, InnovationLabs', image: '@/assets/images/feedbacks/3.webp', animation: 'fade-down', feedback: 'Outstanding quality and attention to detail.', stars: 5 },
-				{ full_name: 'Emily Davis', designation: 'Product Manager, SoftWorks', image: '@/assets/images/feedbacks/4.webp', animation: 'fade-right', feedback: 'Great communication and timely delivery.', stars: 5 }
+				{ full_name: 'John Smith', designation: 'CEO, TechCorp', image: '/src/assets/images/feedbacks/1.webp', animation: 'fade-up', feedback: 'Thanks to NexTash, our organization underwent a seamless digital transformation, enhancing efficiency and accelerating our reporting processes. Their expertise in digitalization not only streamlined our operations but also provided us with valuable insights for strategic decision-making. NexTash\'s solutions have truly revolutionized the way we operate, allowing us to stay ahead in today\'s fast-paced business environment.', stars: 5 },
+				{ full_name: 'Sarah Johnson', designation: 'Marketing Director, GrowthCo', image: '/src/assets/images/feedbacks/2.webp', animation: 'zoom-in', feedback: 'They delivered beyond our expectations.', stars: 5 },
+				{ full_name: 'Mike Chen', designation: 'CTO, InnovationLabs', image: '/src/assets/images/feedbacks/3.webp', animation: 'fade-down', feedback: 'Outstanding quality and attention to detail.', stars: 5 },
+				{ full_name: 'Emily Davis', designation: 'Product Manager, SoftWorks', image: '/src/assets/images/feedbacks/4.webp', animation: 'fade-right', feedback: 'Great communication and timely delivery.', stars: 5 }
 			],
 			clients: [
-				'@/assets/images/logos/1.png','@/assets/images/logos/2.png','@/assets/images/logos/3.png','@/assets/images/logos/4.png','@/assets/images/logos/5.png','@/assets/images/logos/6.png','@/assets/images/logos/7.png','@/assets/images/logos/8.png','@/assets/images/logos/9.png','@/assets/images/logos/10.png','@/assets/images/logos/11.png','@/assets/images/logos/12.png'
+				'/src/assets/images/logos/1.png', '/src/assets/images/logos/2.png', '/src/assets/images/logos/3.png', '/src/assets/images/logos/4.png', '/src/assets/images/logos/5.png', '/src/assets/images/logos/6.png', '/src/assets/images/logos/7.png', '/src/assets/images/logos/8.png', '/src/assets/images/logos/9.png', '/src/assets/images/logos/10.png', '/src/assets/images/logos/11.png', '/src/assets/images/logos/12.png'
 			],
 			blogs: [
-				{ id: 1, slug: 'blog-1', title: 'How to scale your product', meta_image: '@/assets/images/blogs/1.webp', blogger: 'NexTash', blog_intro: 'Strategies for scaling...', category: 'Product', published_on: '2024-06-01' },
-				{ id: 2, slug: 'blog-2', title: 'UI/UX patterns in 2024', meta_image: '@/assets/images/blogs/2.webp', blogger: 'NexTash', blog_intro: 'Design trends to watch...', category: 'Design', published_on: '2024-07-10' },
-				{ id: 3, slug: 'blog-3', title: 'Cloud cost optimization', meta_image: '@/assets/images/blogs/3.webp', blogger: 'NexTash', blog_intro: 'Reduce spend with best practices...', category: 'Cloud', published_on: '2024-08-05' }
+				{ id: 1, slug: 'blog-1', title: 'How to scale your product', meta_image: '/src/assets/images/blogs/1.webp', blogger: 'NexTash', blog_intro: 'Strategies for scaling...', category: 'Product', published_on: '2024-06-01' },
+				{ id: 2, slug: 'blog-2', title: 'UI/UX patterns in 2024', meta_image: '/src/assets/images/blogs/2.webp', blogger: 'NexTash', blog_intro: 'Design trends to watch...', category: 'Design', published_on: '2024-07-10' },
+				{ id: 3, slug: 'blog-3', title: 'Cloud cost optimization', meta_image: '/src/assets/images/blogs/3.webp', blogger: 'NexTash', blog_intro: 'Reduce spend with best practices...', category: 'Cloud', published_on: '2024-08-05' },
+				{ id: 4, slug: 'blog-4', title: 'Cloud cost optimization', meta_image: '/src/assets/images/blogs/3.webp', blogger: 'NexTash', blog_intro: 'Reduce spend with best practices...', category: 'Cloud', published_on: '2024-08-15' },
 			]
 		}
 	},

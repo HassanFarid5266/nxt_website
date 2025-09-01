@@ -1,13 +1,12 @@
-/* Import Boxicons */
-@import url('https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css');
-
-/* Import compiled CSS */
-@import '../dist/css/nextash_website_v2.bundle.KVKTXMGA.css';
-
-/* Import AOS CSS */
+@import "./app/_app";
+@import "./mixins/_mixins";
+@import "./fonts/_fonts";
+@import "./libs/_libs";
+@import "./components/_components";
+@import "./pages/_pages";
+@import "./utils/_utils";
 @import 'aos/dist/aos.css';
 
-/* Custom styles for Vue.js specific elements */
 .v-enter-active,
 .v-leave-active {
   transition: opacity 0.3s ease;
