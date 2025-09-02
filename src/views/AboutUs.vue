@@ -624,7 +624,7 @@
             <h3 class="section-title">Our Leadership</h3>
           </div>
           <div class="row-team-3x">
-            <div class="col" v-for="member in employees" :key="member.id" data-aos-duration="1000" data-aos="zoom-in"
+            <div class="col" v-for="member in employeesStore.getEmployees" :key="member.id" data-aos-duration="1000" data-aos="zoom-in"
               data-aos-once="true" data-aos-easing="ease-in-out">
               <article class="card card-team card-hoverable">
                 <a class="card-image" href="javascript:void(0)">
@@ -706,9 +706,14 @@
   </section>
 </template>
 <script setup>
-const employees = [
-  { id: 1, firstName: 'Abdullah', lastName: 'Arshad', designation: 'Chief Operating Officer (COO)', image: '/src/assets/images/team/abdullah.webp' },
-  { id: 2, firstName: 'Faisal', lastName: '', designation: 'CEO & Founder', image: '/src/assets/images/faisal.webp' },
-  { id: 3, firstName: 'Team', lastName: 'Lead', designation: 'Lead Developer', image: '/src/assets/images/team/3.webp' }
-]
+import { onMounted } from 'vue'
+import { useEmployeesStore } from '@/stores'
+
+// Initialize stores
+const employeesStore = useEmployeesStore()
+
+// Lifecycle
+onMounted(() => {
+  employeesStore.fetchEmployees()
+})
 </script>

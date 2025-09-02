@@ -25,7 +25,7 @@
       <div class="boxed">
         <div class="team-grid">
           <TeamMemberCard
-            v-for="member in teamMembers"
+            v-for="member in employeesStore.getEmployees"
             :key="member.id"
             :id="member.id"
             :name="member.name"
@@ -100,99 +100,17 @@
   </main>
 </template>
 
-<script>
+<script setup>
+import { onMounted } from 'vue'
 import SEO from '@/components/SEO.vue'
 import TeamMemberCard from '@/components/TeamMemberCard.vue'
+import { useEmployeesStore } from '@/stores'
 
-export default {
-  name: 'Team',
-  components: {
-    SEO,
-    TeamMemberCard
-  },
-  data() {
-    return {
-      teamMembers: [
-        {
-          id: 1,
-          name: 'Ahmed Hassan',
-          position: 'CEO & Founder',
-          description: 'Visionary leader with over 10 years of experience in digital transformation and business strategy.',
-          image: '/src/assets/images/team/1.webp',
-          skills: ['Leadership', 'Strategy', 'Business Development'],
-          linkedin: 'https://linkedin.com/in/ahmed-hassan',
-          twitter: 'https://twitter.com/ahmed_hassan',
-          github: '',
-          email: 'ahmed@nextash.com',
-          variant: 'featured'
-        },
-        {
-          id: 2,
-          name: 'Sarah Johnson',
-          position: 'Lead Developer',
-          description: 'Full-stack developer specializing in modern web technologies and scalable architecture.',
-          image: '/src/assets/images/team/2.webp',
-          skills: ['Vue.js', 'Node.js', 'Python', 'AWS'],
-          linkedin: 'https://linkedin.com/in/sarah-johnson',
-          twitter: 'https://twitter.com/sarah_dev',
-          github: 'https://github.com/sarahjohnson',
-          email: 'sarah@nextash.com',
-          variant: 'default'
-        },
-        {
-          id: 3,
-          name: 'Michael Chen',
-          position: 'UI/UX Designer',
-          description: 'Creative designer focused on creating intuitive and beautiful user experiences.',
-          image: '/src/assets/images/team/3.webp',
-          skills: ['Figma', 'Adobe Creative Suite', 'Prototyping', 'User Research'],
-          linkedin: 'https://linkedin.com/in/michael-chen',
-          twitter: '',
-          github: '',
-          email: 'michael@nextash.com',
-          variant: 'default'
-        },
-        {
-          id: 4,
-          name: 'Emily Rodriguez',
-          position: 'Mobile Developer',
-          description: 'Expert in cross-platform mobile development with a focus on performance and user experience.',
-          image: '/src/assets/images/team/4.webp',
-          skills: ['React Native', 'Flutter', 'iOS', 'Android'],
-          linkedin: 'https://linkedin.com/in/emily-rodriguez',
-          twitter: 'https://twitter.com/emily_mobile',
-          github: 'https://github.com/emilyrodriguez',
-          email: 'emily@nextash.com',
-          variant: 'default'
-        },
-        {
-          id: 5,
-          name: 'David Kim',
-          position: 'DevOps Engineer',
-          description: 'Infrastructure specialist focused on automation, scalability, and security.',
-          image: '/src/assets/images/team/5.webp',
-          skills: ['Docker', 'Kubernetes', 'AWS', 'CI/CD'],
-          linkedin: 'https://linkedin.com/in/david-kim',
-          twitter: '',
-          github: 'https://github.com/davidkim',
-          email: 'david@nextash.com',
-          variant: 'default'
-        },
-        {
-          id: 6,
-          name: 'Lisa Wang',
-          position: 'Digital Marketing Specialist',
-          description: 'Marketing expert with deep knowledge of digital strategies and growth optimization.',
-          image: '/src/assets/images/team/6.webp',
-          skills: ['SEO', 'SEM', 'Social Media', 'Analytics'],
-          linkedin: 'https://linkedin.com/in/lisa-wang',
-          twitter: 'https://twitter.com/lisa_marketing',
-          github: '',
-          email: 'lisa@nextash.com',
-          variant: 'default'
-        }
-      ]
-    }
-  }
-}
+// Initialize stores
+const employeesStore = useEmployeesStore()
+
+// Lifecycle
+onMounted(() => {
+  employeesStore.fetchEmployees()
+})
 </script>
