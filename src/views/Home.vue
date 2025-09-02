@@ -636,7 +636,7 @@
 					<h3 class="section-title">Brief 2 of 200+</h3>
 				</div>
 				<div class="case-studies">
-					<article class="card card-case-study " v-for="project in projects" :key="project.id"
+					<article class="card card-case-study " v-for="project in projectsStore.getProjects" :key="project.id"
 						data-aos-duration="1000" data-aos="fade-down" data-aos-once="true">
 						<div class="card-head">
 							<div class="product-image" v-for="(img, idx) in project.images" :key="idx">
@@ -666,7 +666,7 @@
 					<h3 class="section-title">Our Leadership</h3>
 				</div>
 				<div class="row-team-3x">
-					<div class="col" v-for="member in employees" :key="member.id" data-aos-duration="1000"
+					<div class="col" v-for="member in employeesStore.getEmployees" :key="member.id" data-aos-duration="1000"
 						data-aos="zoom-in" data-aos-once="true" data-aos-easing="ease-in-out">
 						<article class="card card-team card-hoverable">
 							<a class="card-image" href="javascript:void(0)">
@@ -723,7 +723,7 @@
 				</div>
 				<br><br>
 				<div class="row-feedbacks">
-					<article class="col" v-for="(item, index) in testimonials" :key="index" data-aos-duration="1000"
+					<article class="col" v-for="(item, index) in testimonialsStore.getTestimonials" :key="index" data-aos-duration="1000"
 						:data-aos="item.animation" data-aos-once="true" data-aos-easing="linear">
 						<div class="card card-feedback active">
 							<div class="card-head">
@@ -871,7 +871,7 @@
 				<h3 class="section-title">Our Partial Client List</h3>
 				<br><br>
 				<article class="row-clients">
-					<div class="col" v-for="(logo, index) in clients" :key="index" data-aos-duration="1000"
+					<div class="col" v-for="(logo, index) in clientsStore.getClients" :key="index" data-aos-duration="1000"
 						data-aos="fade-up" data-aos-once="true" data-aos-easing="ease-in-out">
 						<img :src="logo" class="image-full grayscale" alt="Client Logo" />
 					</div>
@@ -895,7 +895,7 @@
 					768: { slidesPerView: 2 },
 					992: { slidesPerView: 3 }
 				}" navigation class="carousel">
-					<SwiperSlide v-for="blog in blogs" :key="blog.id">
+					<SwiperSlide v-for="blog in blogsStore.getBlogs" :key="blog.id">
 						<article class="card card-blog">
 							<div class="card-head">
 								<a class="card-image image-zoom" :href="`/blog-post/${blog.slug}`">
@@ -934,80 +934,32 @@
 	</main>
 </template>
 
-<script>
+<script setup>
+import { onMounted } from 'vue'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Navigation } from 'swiper/modules'
+import { 
+  useProjectsStore, 
+  useEmployeesStore, 
+  useTestimonialsStore, 
+  useClientsStore, 
+  useBlogsStore, 
+  useUIStore 
+} from '@/stores'
 
-export default {
-	name: 'Home',
-	components: {
-		Swiper,
-		SwiperSlide
-	},
-	data() {
-		return {
-			modules: [Navigation],
-			projects: [
-				{
-					id: 1,
-					name: 'Multan University of Science & Technology Pakistan',
-					category: 'Business Portfolio',
-					description: 'Our team ensures the seamless functioning of their website, offering technical assistance and maintenance to uphold their online presence. Through continuous support, we help the Multan University of Science & Technology effectively communicate with students, faculty, and stakeholders, facilitating smooth information dissemination and enhancing their digital presence in the education sector.',
-					images: ['/src/assets/images/projects/1.webp', '/src/assets/images/projects/2.webp', '/src/assets/images/projects/3.webp', '/src/assets/images/projects/4.webp']
-				},
-				{
-					id: 2,
-					name: 'Project Management SaaS',
-					category: 'SaaS',
-					description: 'Comprehensive project management tool for teams',
-					images: ['/src/assets/images/projects/5.webp', '/src/assets/images/projects/6.webp', '/src/assets/images/projects/7.webp', '/src/assets/images/projects/8.webp']
-				}
-			],
-			employees: [
-				{ id: 1, firstName: 'Abdullah', lastName: 'Arshad', designation: 'Chief Operating Officer (COO)', image: '/src/assets/images/team/abdullah.webp' },
-				{ id: 2, firstName: 'Faisal', lastName: '', designation: 'CEO & Founder', image: '/src/assets/images/faisal.webp' },
-				{ id: 3, firstName: 'Team', lastName: 'Lead', designation: 'Lead Developer', image: '/src/assets/images/team/3.webp' }
-			],
-			testimonials: [
-				{ full_name: 'John Smith', designation: 'CEO, TechCorp', image: '/src/assets/images/feedbacks/1.webp', animation: 'fade-up', feedback: 'Thanks to NexTash, our organization underwent a seamless digital transformation, enhancing efficiency and accelerating our reporting processes. Their expertise in digitalization not only streamlined our operations but also provided us with valuable insights for strategic decision-making. NexTash\'s solutions have truly revolutionized the way we operate, allowing us to stay ahead in today\'s fast-paced business environment.', stars: 5 },
-				{ full_name: 'Sarah Johnson', designation: 'Marketing Director, GrowthCo', image: '/src/assets/images/feedbacks/2.webp', animation: 'zoom-in', feedback: 'NexTash\'s comprehensive server management and database optimization services have been instrumental in enhancing our IT infrastructure\'s performance and reliability. With their meticulous approach and attention to detail, NexTash ensured that our servers were effectively managed and our databases were optimized for optimal performance. Their proactive monitoring and troubleshooting capabilities have minimized downtime and ensured seamless operations across our systems.', stars: 5 },
-				{ full_name: 'Mike Chen', designation: 'CTO, InnovationLabs', image: '/src/assets/images/feedbacks/3.webp', animation: 'fade-down', feedback: 'Thanks to NexTash, our organization underwent a seamless digital transformation, enhancing efficiency and accelerating our reporting processes. Their expertise in digitalization not only streamlined our operations but also provided us with valuable insights for strategic decision-making. NexTash\'s solutions have truly revolutionized the way we operate, allowing us to stay ahead in today\'s fast-paced business environment.', stars: 5 },
-				{ full_name: 'Emily Davis', designation: 'Product Manager, SoftWorks', image: '/src/assets/images/feedbacks/4.webp', animation: 'fade-right', feedback: 'Thanks to NexTash, our organization underwent a seamless digital transformation, enhancing efficiency and accelerating our reporting processes. Their expertise in digitalization not only streamlined our operations but also provided us with valuable insights for strategic decision-making. NexTash\'s solutions have truly revolutionized the way we operate, allowing us to stay ahead in today\'s fast-paced business environment.', stars: 5 }
-			],
-			clients: [
-				'/src/assets/images/logos/lab_system_c.png', '/src/assets/images/logos/chaintusker_c.png', '/src/assets/images/logos/BS_c.png', '/src/assets/images/logos/chaintusker_c.png', '/src/assets/images/logos/chaintusker_c.png', '/src/assets/images/logos/chaintusker_c.png', '/src/assets/images/logos/chaintusker_c.png', '/src/assets/images/logos/chaintusker_c.png', '/src/assets/images/logos/chaintusker_c.png', '/src/assets/images/logos/chaintusker_c.png'
-			],
-			blogs: [
-				{ id: 1, slug: 'blog-1', title: 'How to scale your product', meta_image: '/src/assets/images/blogs/1.webp', blogger: 'NexTash', blog_intro: 'Strategies for scaling...', category: 'Product', published_on: '2024-06-01' },
-				{ id: 2, slug: 'blog-2', title: 'UI/UX patterns in 2024', meta_image: '/src/assets/images/blogs/2.webp', blogger: 'NexTash', blog_intro: 'Design trends to watch...', category: 'Design', published_on: '2024-07-10' },
-				{ id: 3, slug: 'blog-3', title: 'Cloud cost optimization', meta_image: '/src/assets/images/blogs/3.webp', blogger: 'NexTash', blog_intro: 'Reduce spend with best practices...', category: 'Cloud', published_on: '2024-08-05' },
-			]
-		}
-	},
-	mounted() {
-		this.initLazyLoading()
-	},
-	methods: {
-		initLazyLoading() {
-			const lazyImages = document.querySelectorAll('.lazy-load')
-			if (!('IntersectionObserver' in window)) return
-			const options = { threshold: 0.1 }
-			const onIntersect = (entries, observer) => {
-				entries.forEach(entry => {
-					if (entry.isIntersecting) {
-						const img = entry.target
-						const dataSrc = img.getAttribute('data-src')
-						if (dataSrc) {
-							img.src = dataSrc
-							img.classList.remove('lazy-load')
-						}
-						observer.unobserve(img)
-					}
-				})
-			}
-			const observer = new IntersectionObserver(onIntersect, options)
-			lazyImages.forEach(img => observer.observe(img))
-		}
-	}
-}
+// Initialize stores
+const projectsStore = useProjectsStore()
+const employeesStore = useEmployeesStore()
+const testimonialsStore = useTestimonialsStore()
+const clientsStore = useClientsStore()
+const blogsStore = useBlogsStore()
+const uiStore = useUIStore()
+
+// Swiper modules
+const modules = [Navigation]
+
+// Lifecycle
+onMounted(() => {
+  uiStore.initLazyLoading()
+})
 </script>
