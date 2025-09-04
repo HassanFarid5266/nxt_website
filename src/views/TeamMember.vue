@@ -12,7 +12,7 @@
     </section>
 
     <main class="boxed">
-      <section class="row-cols-2">
+      <section v-if="member" class="row-cols-2">
         <div
           class="col"
           data-aos-duration="1000"
@@ -47,7 +47,7 @@
           </p>
           
           <!-- Leadership specific details -->
-          <div v-if="member.isLeadership" class="leadership-details">
+          <!-- <div v-if="member.isLeadership" class="leadership-details">
             <h4 class="section-subtitle">Experience</h4>
             <p class="experience-text">{{ member.experience || 'Extensive experience in leadership and management' }}</p>
             
@@ -60,22 +60,11 @@
                 <i class="bx bx-envelope"></i> Email
               </a>
             </div>
-          </div>
+          </div> -->
         </div>
       </section>
       <br /><br /><br />
     </main>
-
-    <!-- CTA Section -->
-    <section class="boxed card card-cta bg-one">
-      <div class="card-body">
-        <h3 class="card-title">Interested in working with us!</h3>
-        <p class="card-desc">
-          Please visit our careers page for available job positions
-        </p>
-        <router-link to="/careers" class="btn-contact">Join Us</router-link>
-      </div>
-    </section>
   </main>
 </template>
 

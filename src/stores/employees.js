@@ -2,7 +2,6 @@ import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
 
 export const useEmployeesStore = defineStore('employees', () => {
-  // Leadership Team (CTO, CIO, COO)
   const leadership = ref([
     { 
       id: 1, 
@@ -11,9 +10,9 @@ export const useEmployeesStore = defineStore('employees', () => {
       designation: 'Chief Operating Officer (COO)', 
       image: '/src/assets/images/team/abdullah.webp',
       bio: 'Leading operational excellence and strategic execution across all business units.',
-      experience: '8+ years in operations management',
-      linkedin: 'https://linkedin.com/in/abdullah-arshad',
-      email: 'abdullah@nextash.com',
+      // experience: '8+ years in operations management',
+      // linkedin: 'https://linkedin.com/in/abdullah-arshad',
+      // email: 'abdullah@nextash.com',
       isLeadership: true
     },
     { 
@@ -22,10 +21,10 @@ export const useEmployeesStore = defineStore('employees', () => {
       lastName: 'Mehmood', 
       designation: 'Chief Technology Officer (CTO)', 
       image: '/src/assets/images/team/shahid.webp',
-      bio: 'Driving technological innovation and leading our development teams to create cutting-edge solutions.',
-      experience: '10+ years in software development and architecture',
-      linkedin: 'https://linkedin.com/in/shahid-mehmood',
-      email: 'shahid@nextash.com',
+      bio: 'Shahid is the driving force behind our tech innovations, always working to create solutions that make life easier for our clients. With his sharp problem-solving skills and dedication to excellence, Shahid leads our development team with expertise and passion. He also manages our training programs, ensuring our team stays ahead of the curve in technology. As head of development, Shahid fosters a culture of teamwork and high performance, inspiring everyone to reach their fullest potential.',
+      // experience: '10+ years in software development and architecture',
+      // linkedin: 'https://linkedin.com/in/shahid-mehmood',
+      // email: 'shahid@nextash.com',
       isLeadership: true
     },
     { 
@@ -35,11 +34,11 @@ export const useEmployeesStore = defineStore('employees', () => {
       designation: 'Chief Information Officer (CIO)', 
       image: '/src/assets/images/team/tania.webp',
       bio: 'Overseeing information technology strategy and ensuring seamless digital transformation.',
-      experience: '12+ years in IT strategy and digital transformation',
-      linkedin: 'https://linkedin.com/in/tania-khan',
-      email: 'tania@nextash.com',
+      // experience: '12+ years in IT strategy and digital transformation',
+      // linkedin: 'https://linkedin.com/in/tania-khan',
+      // email: 'tania@nextash.com',
       isLeadership: true
-    }
+    },
   ])
 
   // Regular Employees
@@ -118,34 +117,6 @@ export const useEmployeesStore = defineStore('employees', () => {
     leadership.value.push({ ...leader, id: newId, isLeadership: true })
   }
 
-  const updateEmployee = (id, updates) => {
-    const index = employees.value.findIndex(emp => emp.id === id)
-    if (index !== -1) {
-      employees.value[index] = { ...employees.value[index], ...updates }
-    }
-  }
-
-  const updateLeader = (id, updates) => {
-    const index = leadership.value.findIndex(leader => leader.id === id)
-    if (index !== -1) {
-      leadership.value[index] = { ...leadership.value[index], ...updates }
-    }
-  }
-
-  const removeEmployee = (id) => {
-    const index = employees.value.findIndex(emp => emp.id === id)
-    if (index !== -1) {
-      employees.value.splice(index, 1)
-    }
-  }
-
-  const removeLeader = (id) => {
-    const index = leadership.value.findIndex(leader => leader.id === id)
-    if (index !== -1) {
-      leadership.value.splice(index, 1)
-    }
-  }
-
   const fetchEmployees = async () => {
     // Simulate API call
     try {
@@ -175,10 +146,6 @@ export const useEmployeesStore = defineStore('employees', () => {
     // Actions
     addEmployee,
     addLeader,
-    updateEmployee,
-    updateLeader,
-    removeEmployee,
-    removeLeader,
     fetchEmployees
   }
 })

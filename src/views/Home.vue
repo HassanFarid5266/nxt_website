@@ -666,7 +666,7 @@
 					<h3 class="section-title">Our Leadership</h3>
 				</div>
 				<div class="row-team-3x">
-					<TeamMembers :members="employeesStore.getEmployees" />
+					<TeamMembers :members="employeesStore.getLeadership" />
 				</div>
 				<div class="readmore">
 					<router-link to="/team" class="btn-outline">Let's Meet All?</router-link>
