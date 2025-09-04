@@ -8440,8 +8440,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   padding: 5px 8px;
   -webkit-box-shadow: var(--shadow);
           box-shadow: var(--shadow);
-  -webkit-backdrop-filter: var(--blur);
-          backdrop-filter: var(--blur);
+  backdrop-filter: var(--blur);
   border: 1px solid var(--border);
 }
 .social-links .social-icon {
@@ -8465,8 +8464,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   position: relative;
   border: none;
   outline: none;
-  -webkit-backdrop-filter: var(--blur);
-          backdrop-filter: var(--blur);
+  backdrop-filter: var(--blur);
   background-color: var(--muted);
 }
 
@@ -8712,8 +8710,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   margin-bottom: 5px;
   border-radius: var(--rounded);
   background-color: var(--dark);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
 }
 .collapsible .collapse-item .collapse-head {
   padding: 20px;
@@ -8922,8 +8919,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   margin: var(--card-m);
   width: var(--card-w);
   height: var(--card-h);
-  -webkit-backdrop-filter: var(--card-b);
-          backdrop-filter: var(--card-b);
+  backdrop-filter: var(--card-b);
 }
 .card .card-title {
   font-size: var(--card-title-fs);
@@ -9173,14 +9169,12 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-backdrop-filter: var(--card-b);
-          backdrop-filter: var(--card-b);
+  backdrop-filter: var(--card-b);
 }
 .card-case-study .card-head .product-image {
   border-radius: var(--rounded);
   padding: 2px;
-  -webkit-backdrop-filter: var(--card-b);
-          backdrop-filter: var(--card-b);
+  backdrop-filter: var(--card-b);
   -webkit-box-shadow: var(--shadow);
           box-shadow: var(--shadow);
   -webkit-box-shadow: rgba(255, 30, 0, 0.24) 0px 8px 24px, rgba(255, 38, 0, 0.158) 0px 16px 56px, rgba(235, 6, 25, 0.233) 0px 24px 80px;
@@ -9257,8 +9251,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   }
 }
 .card-case-study .card-body {
-  -webkit-backdrop-filter: blur(50px);
-          backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
   border: 4px solid var(--dark);
   border-radius: var(--card-br);
 }
@@ -9402,12 +9395,22 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   --card-title-fs: clamp(30px, 80vw, 40px);
   text-align: center;
 }
+@media (min-width: 1920px) {
+  .card-about {
+    --card-b: unset;
+  }
+}
 .card-about .card-body {
   width: clamp(320px, 80vw, 1100px);
   margin: auto;
 }
 .card-about .card-body .section-badge {
   margin-bottom: 20px;
+}
+@media (max-width: 1600px) {
+  .card-about .card-body {
+    width: auto;
+  }
 }
 @media (max-width: 576px) {
   .card-about .card-body .card-title {
@@ -9686,8 +9689,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   z-index: 10;
   height: 500px;
   padding: 10px;
-  -webkit-backdrop-filter: var(--blur);
-          backdrop-filter: var(--blur);
+  backdrop-filter: var(--blur);
   border: 2px solid var(--primary);
 }
 @media (max-width: 576px) {
@@ -9705,8 +9707,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   width: 200px;
   height: 300px;
   padding: 10px;
-  -webkit-backdrop-filter: var(--blur);
-          backdrop-filter: var(--blur);
+  backdrop-filter: var(--blur);
   border: 2px solid var(--primary);
 }
 @media (max-width: 992px) {
@@ -10102,7 +10103,6 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   outline-color: var(--primary);
   outline-offset: 0.05em;
   color: var(--primary);
-  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px) !important;
 }
 .btn-outline:active {
