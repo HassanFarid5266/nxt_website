@@ -59,8 +59,18 @@ export const useJobsStore = defineStore('jobs', () => {
           id: 1,
           name: 'senior-frontend-developer',
           company: 'NexTash',
-          job_title: 'Senior Frontend Developer',
-          job_intro: 'We are looking for an experienced Frontend Developer to join our team. You will be responsible for building user-facing web applications using modern technologies.',
+          job_title: 'Frontend Developer',
+          job_intro: 'We are seeking a talented and passionate Front-End Web Developer with expertise in CSS to join our dynamic team. This role is ideal for individuals who are creative, detail-oriented, and have a strong commitment to crafting seamless user experiences. As a Front-End Web Developer, you will play a crucial role in transforming our web designs into stunning, responsive, and user-friendly websites.',
+          status: 'Open',
+          description: `
+          <ol>
+            <li data-list="bullet">Develop and maintain frontend applications using Vue.js</li>
+            <li data-list="bullet">Collaborate with cross-functional teams</li>
+            <li data-list="bullet">Write clean, maintainable code</li>
+            <li data-list="bullet">3+ years of experience with modern JS frameworks</li>
+            <li data-list="bullet">Strong understanding of HTML/CSS/JS</li>
+            <li data-list="bullet">Experience with Vite, Pinia, and REST APIs</li>
+          </ol>`,
           location: 'Karachi, Pakistan',
           type: 'Full-time',
           experience: '3-5 years',
@@ -72,6 +82,16 @@ export const useJobsStore = defineStore('jobs', () => {
           company: 'NexTash',
           job_title: 'UI/UX Designer',
           job_intro: 'Join our design team to create beautiful and intuitive user experiences. You will work on various projects from concept to final implementation.',
+          status: 'Open',
+          description: `
+          <ol>
+            <li data-list="bullet">Create wireframes, prototypes, and high-fidelity designs</li>
+            <li data-list="bullet">Conduct user research and usability testing</li>
+            <li data-list="bullet">Work closely with developers to ship features</li>
+            <li data-list="bullet">2+ years in product design</li>
+            <li data-list="bullet">Strong portfolio demonstrating design process</li>
+            <li data-list="bullet">Figma/Sketch expertise</li>
+          </ol>`,
           location: 'Karachi, Pakistan',
           type: 'Full-time',
           experience: '2-4 years',
