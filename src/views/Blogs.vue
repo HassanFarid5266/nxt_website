@@ -73,6 +73,7 @@ import { useBlogsStore } from '@/stores'
 const blogStore = useBlogsStore()
 
 const search = ref('')
+const appliedSearch = ref('')
 const sort = ref('DESC')
 const selectedCategory = ref('')
 const page = ref(1)
@@ -92,8 +93,8 @@ const filtered = computed(() => {
   if (selectedCategory.value) {
     list = list.filter(b => b.category === selectedCategory.value)
   }
-  if (search.value) {
-    const q = search.value.toLowerCase()
+  if (appliedSearch.value) {
+    const q = appliedSearch.value.toLowerCase()
     list = list.filter(b =>
       b.title.toLowerCase().includes(q) ||
       b.blog_intro.toLowerCase().includes(q) ||
@@ -116,6 +117,7 @@ const loadMore = () => {
   if (hasMore.value) page.value += 1
 }
 const onSearch = () => {
+  appliedSearch.value = search.value
   page.value = 1
 }
 const onSort = () => {
