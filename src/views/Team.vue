@@ -277,7 +277,7 @@
       <!-- CEO MESSAGE -->
       <br /><br /><br />
       <br /><br /><br />
-      <!-- TEAM -->
+      <!-- LEADERSHIP SECTION -->
       <section class="team">
         <div class="boxed">
           <div class="section-center">
@@ -285,7 +285,7 @@
             <h3 class="section-title">Meet Our Leadership</h3>
           </div>
           <div class="row-team-3x">
-            <TeamMembers :members="employeesStore.getEmployees" />
+            <TeamMembers :members="employeesStore.getLeadership" />
             <!-- {% set employees = frappe.get_all("Employee", { "status": "Active",
             "custom_featured" : 1, "custom_show_web" : 1 }, ["first_name",
             "last_name", "designation", "image", "name"],
