@@ -7,6 +7,7 @@ import Services from '@/views/Services.vue'
 import Projects from '@/views/Projects.vue'
 import ContactUs from '@/views/ContactUs.vue'
 import Team from '@/views/Team.vue'
+import TeamMember from '@/views/TeamMember.vue'
 import Careers from '@/views/Careers.vue'
 import Blogs from '@/views/Blogs.vue'
 import BlogPost from '@/views/BlogPost.vue'
@@ -53,6 +54,12 @@ const routes = [
     path: '/team',
     name: 'Team',
     component: Team
+  },
+  {
+    path: '/team/:id',
+    name: 'TeamMember',
+    component: TeamMember,
+    props: true
   },
   {
     path: '/careers',

@@ -10,6 +10,10 @@ export const useEmployeesStore = defineStore('employees', () => {
       lastName: 'Arshad', 
       designation: 'Chief Operating Officer (COO)', 
       image: '/src/assets/images/team/abdullah.webp',
+      bio: 'Leading operational excellence and strategic execution across all business units.',
+      experience: '8+ years in operations management',
+      linkedin: 'https://linkedin.com/in/abdullah-arshad',
+      email: 'abdullah@nextash.com',
       isLeadership: true
     },
     { 
@@ -18,6 +22,10 @@ export const useEmployeesStore = defineStore('employees', () => {
       lastName: 'Mehmood', 
       designation: 'Chief Technology Officer (CTO)', 
       image: '/src/assets/images/team/shahid.webp',
+      bio: 'Driving technological innovation and leading our development teams to create cutting-edge solutions.',
+      experience: '10+ years in software development and architecture',
+      linkedin: 'https://linkedin.com/in/shahid-mehmood',
+      email: 'shahid@nextash.com',
       isLeadership: true
     },
     { 
@@ -26,6 +34,10 @@ export const useEmployeesStore = defineStore('employees', () => {
       lastName: 'Khan', 
       designation: 'Chief Information Officer (CIO)', 
       image: '/src/assets/images/team/tania.webp',
+      bio: 'Overseeing information technology strategy and ensuring seamless digital transformation.',
+      experience: '12+ years in IT strategy and digital transformation',
+      linkedin: 'https://linkedin.com/in/tania-khan',
+      email: 'tania@nextash.com',
       isLeadership: true
     }
   ])

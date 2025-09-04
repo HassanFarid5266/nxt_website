@@ -923,7 +923,7 @@
 
 <script setup>
 import { onMounted } from 'vue'
-import TeamMembers from '@/components/TeamMemberCard.vue'
+import TeamMembers from '@/components/TeamCard.vue'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Navigation } from 'swiper/modules'
 import { 

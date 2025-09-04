@@ -624,20 +624,7 @@
             <h3 class="section-title">Our Leadership</h3>
           </div>
           <div class="row-team-3x">
-            <div class="col" v-for="member in employeesStore.getEmployees" :key="member.id" data-aos-duration="1000" data-aos="zoom-in"
-              data-aos-once="true" data-aos-easing="ease-in-out">
-              <article class="card card-team card-hoverable">
-                <a class="card-image" href="javascript:void(0)">
-                  <img :data-src="member.image" :src="member.image" class="image lazy-load" />
-                </a>
-                <div class="card-body">
-                  <h3 class="card-title">
-                    <a href="javascript:void(0)">{{ member.firstName }} {{ member.lastName }}</a>
-                  </h3>
-                  <p class="card-desc">{{ member.designation }}</p>
-                </div>
-              </article>
-            </div>
+            <TeamMembers :members="employeesStore.getLeadership" />
           </div>
           <div class="readmore">
             <router-link to="/team" class="btn-outline">Let's Meet All?</router-link>
@@ -707,6 +694,7 @@
 </template>
 <script setup>
 import { onMounted } from 'vue'
+import TeamMembers from '@/components/TeamCard.vue'
 import { useEmployeesStore } from '@/stores'
 
 // Initialize stores

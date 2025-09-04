@@ -285,7 +285,7 @@
             <h3 class="section-title">Meet Our Leadership</h3>
           </div>
           <div class="row-team-3x">
-            <TeamMembers :members="employeesStore.getLeadership" />
+            <TeamCard :members="employeesStore.getLeadership" />
             <!-- {% set employees = frappe.get_all("Employee", { "status": "Active",
             "custom_featured" : 1, "custom_show_web" : 1 }, ["first_name",
             "last_name", "designation", "image", "name"],
@@ -322,7 +322,7 @@
             <h3 class="section-title">Bishops, Rooks, Queens and Soldiers</h3>
           </div>
           <div class="row-team-4x">
-            <TeamMembers :members="employeesStore.getEmployees" />
+            <TeamCard :members="employeesStore.getEmployees" />
             <!-- {% set employees = frappe.get_all("Employee", { "status": "Active",
             "custom_featured" : 0 }, ["name","first_name", "last_name",
             "designation", "image"], order_by="custom_team_order") %} {% for item in
@@ -368,7 +368,7 @@
 
 <script setup>
 import { onMounted } from 'vue'
-import TeamMembers from '@/components/TeamMemberCard.vue'
+import TeamCard from '@/components/TeamCard.vue'
 import { useEmployeesStore } from '@/stores'
 
 // Initialize stores
