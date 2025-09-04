@@ -33,7 +33,67 @@ export const useBlogsStore = defineStore('blogs', () => {
       blog_intro: 'Reduce spend with best practices...', 
       category: 'Cloud', 
       published_on: '2024-08-05' 
-    }
+    },
+    { 
+      id: 4, 
+      slug: 'blog-4', 
+      title: 'How to scale your product', 
+      meta_image: '/src/assets/images/blogs/1.webp', 
+      blogger: 'NexTash', 
+      blog_intro: 'Strategies for scaling...', 
+      category: 'Product', 
+      published_on: '2024-06-01' 
+    },
+    { 
+      id: 5, 
+      slug: 'blog-5', 
+      title: 'UI/UX patterns in 2024', 
+      meta_image: '/src/assets/images/blogs/2.webp', 
+      blogger: 'NexTash', 
+      blog_intro: 'Design trends to watch...', 
+      category: 'Design', 
+      published_on: '2024-07-10' 
+    },
+    { 
+      id: 6, 
+      slug: 'blog-6', 
+      title: 'Cloud cost optimization', 
+      meta_image: '/src/assets/images/blogs/3.webp', 
+      blogger: 'NexTash', 
+      blog_intro: 'Reduce spend with best practices...', 
+      category: 'Cloud', 
+      published_on: '2024-08-05' 
+    },
+    { 
+      id: 7, 
+      slug: 'blog-7', 
+      title: 'How to scale your product', 
+      meta_image: '/src/assets/images/blogs/1.webp', 
+      blogger: 'NexTash', 
+      blog_intro: 'Strategies for scaling...', 
+      category: 'Product', 
+      published_on: '2024-06-01' 
+    },
+    { 
+      id: 8, 
+      slug: 'blog-8', 
+      title: 'UI/UX patterns in 2024', 
+      meta_image: '/src/assets/images/blogs/2.webp', 
+      blogger: 'NexTash', 
+      blog_intro: 'Design trends to watch...', 
+      category: 'Design', 
+      published_on: '2024-07-10' 
+    },
+    { 
+      id: 9, 
+      slug: 'blog-9', 
+      title: 'Cloud cost optimization', 
+      meta_image: '/src/assets/images/blogs/3.webp', 
+      blogger: 'NexTash', 
+      blog_intro: 'Reduce spend with best practices...', 
+      category: 'Cloud', 
+      published_on: '2024-08-05' 
+    },
   ])
 
   // Getters
@@ -53,20 +113,6 @@ export const useBlogsStore = defineStore('blogs', () => {
   const addBlog = (blog) => {
     const newId = Math.max(...blogs.value.map(b => b.id)) + 1
     blogs.value.push({ ...blog, id: newId })
-  }
-
-  const updateBlog = (id, updates) => {
-    const index = blogs.value.findIndex(blog => blog.id === id)
-    if (index !== -1) {
-      blogs.value[index] = { ...blogs.value[index], ...updates }
-    }
-  }
-
-  const removeBlog = (id) => {
-    const index = blogs.value.findIndex(blog => blog.id === id)
-    if (index !== -1) {
-      blogs.value.splice(index, 1)
-    }
   }
 
   const fetchBlogs = async () => {
@@ -94,8 +140,6 @@ export const useBlogsStore = defineStore('blogs', () => {
     
     // Actions
     addBlog,
-    updateBlog,
-    removeBlog,
     fetchBlogs
   }
 })

@@ -1,101 +1,38 @@
 <template>
-  <div class="blog-card" :class="cardClass" data-aos="fade-up" data-aos-duration="1000">
-    <div class="blog-image">
-      <img :src="image" :alt="title" class="image" />
-      <div class="blog-category">{{ category }}</div>
-      <div class="blog-date">
-        <i class="bx bx-calendar"></i>
-        {{ formatDate(date) }}
-      </div>
+  <article class="card card-blog">
+    <div class="card-head">
+      <a class="card-image image-zoom" :href="`/blog-post/${blog.slug}`">
+        <img :src="blog.meta_image" class="image lazy-load" data-text="Read" />
+      </a>
     </div>
-    <div class="blog-content">
-      <h3 class="blog-title">{{ title }}</h3>
-      <p class="blog-excerpt">{{ excerpt }}</p>
-      <div class="blog-meta">
-        <div class="author">
-          <i class="bx bx-user"></i>
-          {{ author }}
-        </div>
-        <div class="read-time">
-          <i class="bx bx-time"></i>
-          {{ readTime }} min read
-        </div>
+    <div class="card-body">
+      <div class="text-ellipsis">
+        <span>{{ blog.category }}</span>
       </div>
-      <div class="blog-tags">
-        <span v-for="(tag, index) in tags" :key="index" class="tag">
-          {{ tag }}
-        </span>
-      </div>
-      <router-link :to="`/blog-post/${id}`" class="read-more">
-        Read More <i class="bx bx-right-arrow-alt"></i>
-      </router-link>
+      <br>
+      <h3 class="card-title text-ellipsis text-ellipsis-1">
+        <a :href="`/blog-post/${blog.slug}`">
+          {{ blog.title }}
+        </a>
+      </h3>
+      <p class="card-desc text-ellipsis text-ellipsis-3">
+        {{ blog.blog_intro }}
+      </p>
+      <p class="card-desc">
+        By
+        <a href="javascript:void(0)" class="card-link">{{ blog.blogger }}</a>
+        -
+        <time>{{ blog.published_on }}</time>
+      </p>
     </div>
-  </div>
+  </article>
 </template>
 
-<script>
-export default {
-  name: 'BlogCard',
-  props: {
-    id: {
-      type: [String, Number],
-      required: true
-    },
-    title: {
-      type: String,
-      required: true
-    },
-    excerpt: {
-      type: String,
-      required: true
-    },
-    image: {
-      type: String,
-      required: true
-    },
-    category: {
-      type: String,
-      required: true
-    },
-    author: {
-      type: String,
-      required: true
-    },
-    date: {
-      type: String,
-      required: true
-    },
-    readTime: {
-      type: Number,
-      default: 5
-    },
-    tags: {
-      type: Array,
-      default: () => []
-    },
-    variant: {
-      type: String,
-      default: 'default', // default, featured, compact
-      validator: value => ['default', 'featured', 'compact'].includes(value)
-    }
-  },
-  computed: {
-    cardClass() {
-      return {
-        'blog-card--featured': this.variant === 'featured',
-        'blog-card--compact': this.variant === 'compact'
-      }
-    }
-  },
-  methods: {
-    formatDate(dateString) {
-      const date = new Date(dateString)
-      return date.toLocaleDateString('en-US', {
-        year: 'numeric',
-        month: 'short',
-        day: 'numeric'
-      })
-    }
+<script setup>
+defineProps({
+  blog: {
+    type: Object,
+    required: true
   }
-}
+})
 </script>
