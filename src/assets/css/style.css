@@ -10830,7 +10830,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 }
 
 .page-head {
-  background-image: url(/assets/images/bg-swirl-3.webp);
+  background-image: url("../images/bg-swirl-3.webp");
   background-position: bottom right;
   background-size: cover;
   padding-top: 8rem;
@@ -11611,7 +11611,7 @@ svg #airplain {
   }
 }
 .contact-layout {
-  margin-bottom: 100px;
+  padding-bottom: 100px;
 }
 .contact-layout .boxed {
   display: -webkit-box;

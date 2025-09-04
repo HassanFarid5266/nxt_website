@@ -73,7 +73,7 @@
               />
               <button type="submit" class="bx bx-send action-btn btn-send"></button>
             </form>
-            <p id="newsletter_feedback" v-if="newsletterFeedback">{{ newsletterFeedback }}</p>
+            <p id="newsletter_feedback" v-if="newsletterFeedback" :class="{ 'msg-success': !newsletterFeedback.includes('Snap'), 'msg-danger': newsletterFeedback.includes('Snap') }">{{ newsletterFeedback }}</p>
           </div>
         </div>
       </div>

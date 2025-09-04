@@ -1,199 +1,98 @@
 <template>
-  <main>
-    <SEO 
-      title="Contact Us - NexTash"
-      description="Get in touch with our team for any inquiries, project discussions, or support. We're here to help you succeed."
-      keywords="contact, support, inquiry, project discussion, NexTash contact"
-    />
-    
-    <!-- HERO SECTION -->
-    <section class="hero-section">
-      <div class="boxed">
-        <div class="hero-content">
-          <b class="section-badge">Contact</b>
-          <h1 class="hero-title">Get In Touch</h1>
-          <p class="hero-description">
-            Ready to start your next project? Have questions about our services? 
-            We'd love to hear from you. Let's discuss how we can help your business grow.
-          </p>
-        </div>
+  <section class="page-head">
+    <div class="boxed">
+      <span class="page-badge">CONTACT US</span>
+      <h1 class="page-title">We're Here to Help!</h1>
+      <p class="page-desc">
+        - Welcome to NexTash! We're excited to connect with you. Whether you have questions, feedback, or want to
+        explore collaboration opportunities, we're here to help. Our skilled team ensures swift resolution to your
+        inquiries and issues, while our experienced functional analysts offer expert guidance tailored to your
+        business
+        requirements. Trust us for top-notch support with unmatched expertise. Looking for a career opportunity with
+        NexTash? Visit our <a href="/careers/" class="link">Careers</a> page to see our current openings and apply.
+      </p>
+    </div>
+  </section>
+
+  <main class="contact-layout bg-one">
+    <section class="boxed">
+      <div class="col-left" data-aos-duration="1000" data-aos="fade-right" data-aos-once="true"
+        data-aos-easing="ease-in-out">
+        <article class="media">
+          <i class="bx bx-envelope icon"></i>
+          <div class="media-body">
+            <h4 class="media-title">Email:</h4>
+            <a href="mailto:support@nextash.com" class="media-desc">support@nextash.com</a>
+          </div>
+        </article>
+        <br>
+        <article class="media">
+          <i class="bx bx-phone icon"></i>
+          <div class="media-body">
+            <h4 class="media-title">Mobile:</h4>
+            <a href="tel:+923083077165" class="media-desc" target="_blank">0092 308 3077 165</a>
+          </div>
+        </article>
+
+        <br>
+        <article class="media">
+          <i class="bx bxl-whatsapp icon"></i>
+          <div class="media-body">
+            <h4 class="media-title">WhatsApp:</h4>
+            <a href="https://wa.me/+9203083077165?text=Hello, i get your number from website, can we talk?"
+              target="_blank" class="media-desc">0092 308 3077 165</a>
+          </div>
+        </article>
+
+        <br>
+        <article class="media">
+          <i class="bx bx-building icon align-self-start"></i>
+          <div class="media-body">
+            <h4 class="media-title">Offices:</h4>
+            <a class="media-desc" href="https://www.google.com/maps/search/31.568966,+74.411162?entry=tts"
+              target="_blank">
+              Head Office: 2nd Floor, Al-haram Plaza, Aziz Pulli, Canal Bank Road, Lahore <span
+                class="bx bx-right-top-arrow-circle icon-lg"></span>
+            </a>
+            <hr style="border-color: var(--primary); width: 200px; margin-left: 0">
+            <a class="media-desc" href="https://maps.app.goo.gl/hUSwu1vFRue6LuXX8" target="_blank">
+              Branch Office: Office #D2, 1st Floor, Red Mall, Shalimar Link Road, Lahore <span
+                class="bx bx-right-top-arrow-circle icon-lg"></span>
+            </a>
+          </div>
+        </article>
       </div>
-    </section>
-
-    <!-- CONTACT CONTENT -->
-    <section class="contact-content">
-      <div class="boxed">
-        <div class="contact-grid">
-          <!-- CONTACT FORM -->
-          <div class="contact-form-section">
-            <h2>Send us a Message</h2>
-            <p>Fill out the form below and we'll get back to you within 24 hours.</p>
-            <ContactForm @form-submitted="handleFormSubmitted" />
+      <div class="col-right" data-aos-duration="1000" data-aos="fade-left" data-aos-once="true"
+        data-aos-easing="ease-in-out">
+        <form class="card card-hoverable card-form" enctype="multipart/form-data" id="contact" autocomplete="on">
+          <div class="card-head">
+            <h2 class="card-title">Get in touch</h2>
+            <p class="card-desc">
+              If you have any query please fill out the form below. We do our best to respond within 1 business day.
+            </p>
           </div>
-
-          <!-- CONTACT INFO -->
-          <div class="contact-info-section">
-            <h2>Contact Information</h2>
-            <p>Here are the different ways you can reach us:</p>
-            
-            <div class="contact-methods">
-              <div class="contact-method">
-                <div class="method-icon">
-                  <i class="bx bx-envelope"></i>
-                </div>
-                <div class="method-content">
-                  <h3>Email</h3>
-                  <p>support@nextash.com</p>
-                  <p>info@nextash.com</p>
-                </div>
-              </div>
-
-              <div class="contact-method">
-                <div class="method-icon">
-                  <i class="bx bx-phone"></i>
-                </div>
-                <div class="method-content">
-                  <h3>Phone</h3>
-                  <p>+92 308 307 7165</p>
-                  <p>+92 308 307 7165</p>
-                </div>
-              </div>
-
-              <div class="contact-method">
-                <div class="method-icon">
-                  <i class="bx bx-map"></i>
-                </div>
-                <div class="method-content">
-                  <h3>Address</h3>
-                  <p>NexTash Inc.</p>
-                  <p>Lahore, Pakistan</p>
-                </div>
-              </div>
-
-              <div class="contact-method">
-                <div class="method-icon">
-                  <i class="bx bx-time"></i>
-                </div>
-                <div class="method-content">
-                  <h3>Business Hours</h3>
-                  <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-                  <p>Saturday: 10:00 AM - 4:00 PM</p>
-                </div>
-              </div>
+          <div class="card-body">
+            <div class="input-group">
+              <input type="text" required class="field" id="fullname" placeholder="Full Name*" />
             </div>
-
-            <!-- SOCIAL LINKS -->
-            <div class="social-section">
-              <h3>Follow Us</h3>
-              <div class="social-links">
-                <a href="https://www.facebook.com/nextash" target="_blank" class="social-link facebook">
-                  <i class="bx bxl-facebook"></i>
-                </a>
-                <a href="https://www.linkedin.com/company/nextash/" target="_blank" class="social-link linkedin">
-                  <i class="bx bxl-linkedin"></i>
-                </a>
-                <a href="https://www.instagram.com/nextashinc/" target="_blank" class="social-link instagram">
-                  <i class="bx bxl-instagram"></i>
-                </a>
-                <a href="https://twitter.com/nextashinc" target="_blank" class="social-link twitter">
-                  <i class="bx bxl-twitter"></i>
-                </a>
-                <a href="https://github.com/nextash" target="_blank" class="social-link github">
-                  <i class="bx bxl-github"></i>
-                </a>
-              </div>
+            <div class="input-group">
+              <input type="email" required class="field" id="email" placeholder="Email*" />
+            </div>
+            <div class="input-group">
+              <input type="tel" class="field" id="phone" placeholder="Phone No (optional)" />
+            </div>
+            <div class="input-group">
+              <textarea class="field" required id="message" rows="3" placeholder="Message*"></textarea>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ SECTION -->
-    <section class="faq-section">
-      <div class="boxed">
-        <div class="section-header">
-          <h2>Frequently Asked Questions</h2>
-          <p>Find quick answers to common questions about our services and processes.</p>
-        </div>
-        
-        <div class="faq-grid">
-          <div class="faq-item" v-for="(faq, index) in faqs" :key="index">
-            <div class="faq-question" @click="toggleFaq(index)">
-              <h3>{{ faq.question }}</h3>
-              <i class="bx" :class="faq.isOpen ? 'bx-chevron-up' : 'bx-chevron-down'"></i>
-            </div>
-            <div class="faq-answer" :class="{ 'open': faq.isOpen }">
-              <p>{{ faq.answer }}</p>
-            </div>
+          <div class="card-foot center">
+            <p id="feedback"></p>
+            <button type="submit" class="btn-outline" id="btn">
+              Send message
+            </button>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA SECTION -->
-    <section class="cta-section">
-      <div class="boxed">
-        <div class="cta-content">
-          <h2>Ready to Start Your Project?</h2>
-          <p>Let's discuss your requirements and create something amazing together.</p>
-          <div class="cta-buttons">
-            <router-link to="/services" class="btn-secondary">View Our Services</router-link>
-            <router-link to="/projects" class="btn-primary">See Our Work</router-link>
-          </div>
-        </div>
+        </form>
       </div>
     </section>
   </main>
 </template>
-
-<script>
-import SEO from '@/components/SEO.vue'
-import ContactForm from '@/components/ContactForm.vue'
-
-export default {
-  name: 'ContactUs',
-  components: {
-    SEO,
-    ContactForm
-  },
-  data() {
-    return {
-      faqs: [
-        {
-          question: 'How long does it take to complete a project?',
-          answer: 'Project timelines vary depending on complexity and scope. A simple website might take 2-4 weeks, while complex applications can take 3-6 months. We\'ll provide a detailed timeline during our initial consultation.',
-          isOpen: false
-        },
-        {
-          question: 'What is your pricing structure?',
-          answer: 'We offer flexible pricing based on project requirements. We provide detailed quotes after understanding your needs. We also offer maintenance packages for ongoing support.',
-          isOpen: false
-        },
-        {
-          question: 'Do you provide ongoing support after project completion?',
-          answer: 'Yes, we offer various support packages including maintenance, updates, and technical support. We believe in building long-term relationships with our clients.',
-          isOpen: false
-        },
-        {
-          question: 'What technologies do you use?',
-          answer: 'We use modern, industry-standard technologies including React, Vue.js, Node.js, Python, AWS, and more. We choose the best technology stack for each specific project.',
-          isOpen: false
-        },
-        {
-          question: 'Can you work with existing systems?',
-          answer: 'Absolutely! We can integrate with your existing systems, databases, and APIs. We\'ll analyze your current setup and recommend the best integration approach.',
-          isOpen: false
-        }
-      ]
-    }
-  },
-  methods: {
-    handleFormSubmitted(formData) {
-      console.log('Form submitted:', formData)
-    },
-    toggleFaq(index) {
-      this.faqs[index].isOpen = !this.faqs[index].isOpen
-    }
-  }
-}
-</script>

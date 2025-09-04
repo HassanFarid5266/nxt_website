@@ -2,7 +2,7 @@
   <header class="navbar" :class="{ 'navbar-scroll': isScrolled }" id="navbar">
     <nav class="menu-items boxed">
       <router-link to="/" class="logo">
-        <img src="@/assets/images/logos/logo.png" class="image" width="60" height="60" alt="NexTash Logo" />
+        <img src="@/assets/images/logos/logo.png" class="image" width="60" height="60" @click="toggleSidebar" alt="NexTash Logo" />
       </router-link>
       <button type="button" class="menu-btn" :class="{ 'close-icon': isSidebarOpen }" @click="toggleSidebar">
         <span class="bar1"></span>

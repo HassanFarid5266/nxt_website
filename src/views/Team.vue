@@ -1,10 +1,17 @@
 <template>
   <main>
-    <SEO 
-      title="Our Team - NexTash"
-      description="Meet our talented team of developers, designers, and digital experts who are passionate about creating innovative solutions."
-      keywords="team, developers, designers, digital experts, NexTash team"
-    />
+    <section class="page-head">
+      <div class="boxed">
+        <span class="page-badge">OUR STAFF</span>
+        <h1 class="page-title">Meet Our Talented Team</h1>
+        <p class="page-desc">
+          Meet the brilliant minds behind NexTash, dedicated to empowering
+          businesses for success in today’s digital world. With a passion for
+          excellence and innovative solutions, our team is here to support your
+          journey forward.
+        </p>
+      </div>
+    </section>
     
     <!-- HERO SECTION -->
     <section class="hero-section">
