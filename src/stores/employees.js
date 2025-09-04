@@ -24,6 +24,13 @@ export const useEmployeesStore = defineStore('employees', () => {
       lastName: 'Lead', 
       designation: 'Lead Developer', 
       image: '/src/assets/images/team/3.webp' 
+    },
+    { 
+      id: 4, 
+      firstName: 'Team', 
+      lastName: 'Lead', 
+      designation: 'Lead Developer', 
+      image: '/src/assets/images/team/3.webp' 
     }
   ])
 
