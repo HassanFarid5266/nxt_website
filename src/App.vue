@@ -30,15 +30,7 @@
     <router-view />
 
     <!-- CTA -->
-    <section class="boxed card card-cta bg-one">
-      <div class="card-body">
-        <h3 class="card-title">Share Your Thoughts!</h3>
-        <p class="card-desc">
-          Interested in working with us? Have any questions?
-        </p>
-        <router-link to="/contact-us" class="btn-contact">Get Started</router-link>
-      </div>
-    </section>
+    <Cta />
     <!-- CTA -->
 
     <!-- FOOTER -->
@@ -47,39 +39,30 @@
   </div>
 </template>
 
-<script>
+<script setup>
+import { ref, onMounted } from 'vue'
 import Navbar from '@/layout/Navbar.vue'
 import Sidebar from '@/layout/Sidebar.vue'
 import Footer from '@/layout/Footer.vue'
+import Cta from "@/layout/Cta.vue";
 
-export default {
-  name: 'App',
-  components: {
-    Navbar,
-    Sidebar,
-    Footer
-  },
-  data() {
-    return {
-      isLoading: true,
-      loadingProgress: 0
+const isLoading = ref(true)
+const loadingProgress = ref(0)
+
+const startLoading = () => {
+  const interval = setInterval(() => {
+    loadingProgress.value++
+    if (loadingProgress.value >= 100) {
+      clearInterval(interval)
+      setTimeout(() => {
+        isLoading.value = false
+      }, 500)
     }
-  },
-  mounted() {
-    this.startLoading()
-  },
-  methods: {
-    startLoading() {
-      const interval = setInterval(() => {
-        this.loadingProgress++
-        if (this.loadingProgress >= 100) {
-          clearInterval(interval)
-          setTimeout(() => {
-            this.isLoading = false
-          }, 500)
-        }
-      }, 10)
-    }
-  }
+  }, 10)
 }
+
+onMounted(() => {
+  startLoading()
+})
+
 </script>

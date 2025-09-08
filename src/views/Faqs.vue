@@ -12,10 +12,9 @@
   <main class="faqs-layout bg-one bg-fixed">
     <div class="boxed">
       <!-- LEFT SIDE FAQ -->
-      <section class="col-left" data-aos-duration="1000" data-aos="fade-right" data-aos-once="true"
-        data-aos-easing="ease-in-out">
+      <section class="col-left" data-aos-duration="1000" data-aos="fade-right" data-aos-once="true" data-aos-easing="ease-in-out">
         <div class="collapsible" id="faqs">
-          <div class="collapse-item" v-for="item in faqs" :key="item.name" :class="{ active: openFaq === item.name }">
+          <div class="collapse-item" v-for="item in faqs" :key="item.name" :class="{ active: openFaq === item.name }" data-aos-duration="1000" data-aos="fade-up" data-aos-easing="ease-in-out">
             <button class="collapse-head" type="button" @click="toggleFaq(item.name)"
               :aria-expanded="openFaq === item.name">
               {{ item.title }}
