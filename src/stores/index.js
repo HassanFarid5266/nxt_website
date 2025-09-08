@@ -7,9 +7,8 @@ export { useProjectsStore } from './projects.js'
 export { useTestimonialsStore } from './testimonials.js'
 export { useClientsStore } from './clients.js'
 export { useUIStore } from './ui.js'
+export { useFaqsStore } from './faqs.js'
 
-// You can also create a combined store if needed
-// This allows you to access multiple stores from one place
 export const useMainStore = () => {
   return {
     sidebar: useSidebarStore(),
@@ -19,6 +18,7 @@ export const useMainStore = () => {
     projects: useProjectsStore(),
     testimonials: useTestimonialsStore(),
     clients: useClientsStore(),
-    ui: useUIStore()
+    ui: useUIStore(),
+    faqs: useFaqsStore()
   }
 }

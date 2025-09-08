@@ -1,6 +1,4 @@
-// API utility functions
-export const API_BASE_URL = process.env.VUE_APP_API_URL || 'https://api.nextash.com'
-
+export const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://api.nextash.com';
 // Generic API request function
 export async function apiRequest(endpoint, options = {}) {
   const url = `${API_BASE_URL}${endpoint}`
