@@ -882,7 +882,7 @@
 					768: { slidesPerView: 2 },
 					992: { slidesPerView: 3 }
 				}" navigation class="carousel">
-					<SwiperSlide v-for="post in blogStore.getBlogs" :key="post.id">
+					<SwiperSlide v-for="post in homeBlogs" :key="post.id">
 						<BlogCard :blog="post" />
 					</SwiperSlide>
 				</Swiper>
@@ -896,7 +896,7 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
+import { computed, onMounted } from 'vue'
 import TeamMembers from '@/components/TeamCard.vue'
 import BlogCard from '../components/BlogCard.vue'
 import { Swiper, SwiperSlide } from 'swiper/vue'
@@ -925,4 +925,8 @@ const modules = [Navigation]
 onMounted(() => {
   uiStore.initLazyLoading()
 })
+
+const homeBlogs = computed(() =>
+  blogStore.getBlogs.filter(b => b.showOnHome)
+)
 </script>

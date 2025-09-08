@@ -13,7 +13,8 @@ export const useBlogsStore = defineStore('blogs', () => {
       blog_intro: 'Strategies for scaling...', 
       category: 'Product', 
       published_on: '2024-06-01',
-      content: '<h3>Scaling the right way</h3><p>Here is some detailed content for the blog post...</p>'
+      content: '<h3>Scaling the right way</h3><p>Here is some detailed content for the blog post...</p>',
+      showOnHome: true
     },
     { 
       id: 2, 
@@ -24,7 +25,8 @@ export const useBlogsStore = defineStore('blogs', () => {
       blog_intro: 'Design trends to watch...', 
       category: 'Design', 
       published_on: '2024-07-10',
-      content: '<h3>Design patterns</h3><p>Detailed content goes here...</p>'
+      content: '<h3>Design patterns</h3><p>Detailed content goes here...</p>',
+      showOnHome: true
     },
     { 
       id: 3, 
@@ -35,7 +37,8 @@ export const useBlogsStore = defineStore('blogs', () => {
       blog_intro: 'Reduce spend with best practices...', 
       category: 'Cloud', 
       published_on: '2024-08-05',
-      content: '<h3>Optimize cloud spend</h3><p>Detailed content goes here...</p>'
+      content: '<h3>Optimize cloud spend</h3><p>Detailed content goes here...</p>',
+      showOnHome: true
     },
     { 
       id: 4, 
@@ -45,7 +48,8 @@ export const useBlogsStore = defineStore('blogs', () => {
       blogger: 'NexTash', 
       blog_intro: 'Strategies for scaling...', 
       category: 'Product', 
-      published_on: '2024-06-01' 
+      published_on: '2024-06-01',
+      showOnHome: false
     },
     { 
       id: 5, 
@@ -55,7 +59,8 @@ export const useBlogsStore = defineStore('blogs', () => {
       blogger: 'NexTash', 
       blog_intro: 'Design trends to watch...', 
       category: 'Design', 
-      published_on: '2024-07-10' 
+      published_on: '2024-07-10', 
+      showOnHome: false
     },
     { 
       id: 6, 
@@ -65,7 +70,8 @@ export const useBlogsStore = defineStore('blogs', () => {
       blogger: 'NexTash', 
       blog_intro: 'Reduce spend with best practices...', 
       category: 'Cloud', 
-      published_on: '2024-08-05' 
+      published_on: '2024-08-05', 
+      showOnHome: false
     },
     { 
       id: 7, 
@@ -75,7 +81,8 @@ export const useBlogsStore = defineStore('blogs', () => {
       blogger: 'NexTash', 
       blog_intro: 'Strategies for scaling...', 
       category: 'Product', 
-      published_on: '2024-06-01' 
+      published_on: '2024-06-01', 
+      showOnHome: false
     },
     { 
       id: 8, 
@@ -85,7 +92,8 @@ export const useBlogsStore = defineStore('blogs', () => {
       blogger: 'NexTash', 
       blog_intro: 'Design trends to watch...', 
       category: 'Design', 
-      published_on: '2024-07-10' 
+      published_on: '2024-07-10', 
+      showOnHome: false
     },
     { 
       id: 9, 
@@ -95,7 +103,8 @@ export const useBlogsStore = defineStore('blogs', () => {
       blogger: 'NexTash', 
       blog_intro: 'Reduce spend with best practices...', 
       category: 'Cloud', 
-      published_on: '2024-08-05' 
+      published_on: '2024-08-05', 
+      showOnHome: false
     },
   ])
 
