@@ -8422,7 +8422,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   content: "\ed31";
   color: var(--primary);
   border-radius: 50px;
-  font-family: "icons";
+  font-family: "boxicons";
   margin-right: 10px;
   font-size: 22px;
   position: relative;
@@ -8765,7 +8765,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 .collapsible .collapse-item.active .collapse-body {
   display: block;
 }
-.collapsible .collapse-item.active .collapse-body s div {
+.collapsible .collapse-item.active .collapse-body div {
   margin-bottom: 20px;
 }
 .collapsible .collapse-item.active .collapse-body h3 {
