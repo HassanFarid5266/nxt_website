@@ -1,14 +1,17 @@
 <template>
-  <main>
-    <div class="container">
-      <h1>403 - Forbidden</h1>
-      <p>This is the 403 error page. Content will be converted from the original 403.html</p>
-    </div>
+  <main class="bg-three">
+    <section class="boxed">
+      <article class="card card-error">
+        <h1 class="card-title">403</h1>
+        <h2 class="card-subtitle">Access Denied</h2>
+        <p class="card-desc">
+          Uh-oh! It seems you've reached a restricted area. Access to this page is
+          forbidden, and we're afraid you don't have the key to enter.
+        </p>
+        <button class="btn-outline" onclick="window.history.back()">
+          Go back
+        </button>
+      </article>
+    </section>
   </main>
 </template>
-
-<script>
-export default {
-  name: 'Error403'
-}
-</script>

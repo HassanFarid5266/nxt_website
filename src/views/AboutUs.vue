@@ -307,10 +307,10 @@
                 <div class="square-1"></div>
                 <div class="square-2"></div>
                 <div class="image-lg">
-                  <img data-src="@/assets/images/about/6.webp" class="image lazy-load" alt="Our Story" />
+                  <img data-src="@/assets/images/about/6.webp" src="@/assets/images/about/6.webp" class="image lazy-load" alt="Our Story" />
                 </div>
                 <div class="image-sm">
-                  <img data-src="@/assets/images/about/7.webp" class="image lazy-load" alt="Our Story" />
+                  <img data-src="@/assets/images/about/7.webp" src="@/assets/images/about/7.webp" class="image lazy-load" alt="Our Story" />
                 </div>
               </div>
             </div>

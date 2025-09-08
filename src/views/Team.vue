@@ -251,7 +251,7 @@
           <div class="card-head">
             <div class="card-image" data-aos-duration="1000" data-aos="fade-left" data-aos-once="true"
               data-aos-easing="ease-in-out">
-              <img data-src="@/assets/images/faisal.webp" class="image lazy-load" alt="CEO" />
+              <img data-src="@/assets/images/faisal.webp" src="@/assets/images/faisal.webp" class="image lazy-load" alt="CEO" />
             </div>
           </div>
           <div class="card-body" data-aos-duration="1000" data-aos="fade-right" data-aos-once="true"
