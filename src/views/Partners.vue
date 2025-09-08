@@ -464,7 +464,7 @@
                             <li class="list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
                             <li class="list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
                         </ol>
-                        <a href="contact-us.html" class="btn-outline know-more">Join Us</a>
+                        <router-link to="/contact-us" class="btn-outline know-more">Join Us</router-link>
                     </div>
                 </div>
             </article>
@@ -693,7 +693,7 @@
                             <li class="list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
                             <li class="list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
                         </ol>
-                        <a href="contact-us.html" class="btn-outline know-more">Join Us</a>
+                        <router-link to="/contact-us" class="btn-outline know-more">Join Us</router-link>
                     </div>
                 </article>
             </div>
@@ -940,7 +940,7 @@
                             <li class="list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
                             <li class="list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
                         </ol>
-                        <a href="contact-us.html" class="btn-outline know-more">Join Us</a>
+                        <router-link to="/contact-us" class="btn-outline know-more">Join Us</router-link>
                     </div>
                 </article>
             </div>
