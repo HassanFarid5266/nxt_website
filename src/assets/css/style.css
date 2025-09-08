@@ -8727,7 +8727,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 }
 .collapsible .collapse-item .collapse-head::after {
   content: "\ebc1";
-  font-family: "icons";
+  font-family: "boxicons";
   font-size: 1.8rem;
   -webkit-transition: 0.5s -webkit-transform;
   transition: 0.5s -webkit-transform;
@@ -8765,7 +8765,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 .collapsible .collapse-item.active .collapse-body {
   display: block;
 }
-.collapsible .collapse-item.active .collapse-body div {
+.collapsible .collapse-item.active .collapse-body s div {
   margin-bottom: 20px;
 }
 .collapsible .collapse-item.active .collapse-body h3 {

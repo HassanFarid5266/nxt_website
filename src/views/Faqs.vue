@@ -11,18 +11,21 @@
   </section>
   <main class="faqs-layout bg-one bg-fixed">
     <div class="boxed">
+      <!-- LEFT SIDE FAQ -->
       <section class="col-left" data-aos-duration="1000" data-aos="fade-right" data-aos-once="true"
         data-aos-easing="ease-in-out">
         <div class="collapsible" id="faqs">
-          <div class="collapse-item" v-for="item in faqs" :key="item.name" data-aos-duration="1000" data-aos="fade-up" data-aos-once="true"
-            data-aos-easing="ease-in-out">
-            <button class="collapse-head" data-nxt-toggle="collapse" :data-nxt-target="`faq${item.name}`">
+          <div class="collapse-item" v-for="item in faqs" :key="item.name" :class="{ active: openFaq === item.name }">
+            <button class="collapse-head" type="button" @click="toggleFaq(item.name)"
+              :aria-expanded="openFaq === item.name">
               {{ item.title }}
             </button>
             <div class="collapse-body" :id="`faq${item.name}`" v-html="item.description"></div>
           </div>
         </div>
       </section>
+
+      <!-- RIGHT SIDE FORM -->
       <section class="col-right" data-aos-duration="1000" data-aos="fade-left" data-aos-once="true"
         data-aos-easing="ease-in-out">
         <form class="card card-hoverable card-form" id="faq" autocomplete="on" @submit.prevent="onSubmit">
@@ -48,7 +51,12 @@
             </div>
           </div>
           <div class="card-foot center">
-            <p id="feedback" :class="{ 'msg-success': feedbackType === 'success', 'msg-danger': feedbackType === 'error' }">{{ feedbackMessage }}</p>
+            <p id="feedback" :class="{
+              'msg-success': feedbackType === 'success',
+              'msg-danger': feedbackType === 'error'
+            }">
+              {{ feedbackMessage }}
+            </p>
             <button type="submit" class="btn-outline" id="btn" :disabled="isSubmitting">
               Send message
             </button>
@@ -58,39 +66,46 @@
     </div>
   </main>
 </template>
-<script setup>
-import { onMounted, reactive, computed } from 'vue'
-import { useFaqsStore } from '@/stores/faqs.js'
 
-const faqsStore = useFaqsStore()
-const faqs = computed(() => faqsStore.getFaqs)
-const isSubmitting = computed(() => faqsStore.isSubmitting)
-const feedbackMessage = computed(() => faqsStore.feedbackMessage)
-const feedbackType = computed(() => faqsStore.feedbackType)
+<script setup>
+import { ref, reactive, computed, onMounted } from "vue";
+import { useFaqsStore } from "@/stores/faqs.js";
+
+const faqsStore = useFaqsStore();
+const faqs = computed(() => faqsStore.getFaqs);
+const isSubmitting = computed(() => faqsStore.isSubmitting);
+const feedbackMessage = computed(() => faqsStore.feedbackMessage);
+const feedbackType = computed(() => faqsStore.feedbackType);
 
 const form = reactive({
-  fullname: '',
-  email: '',
-  subject: '',
-  message: ''
-})
+  fullname: "",
+  email: "",
+  subject: "",
+  message: "",
+});
+
+const openFaq = ref(null);
+
+const toggleFaq = (name) => {
+  openFaq.value = openFaq.value === name ? null : name;
+};
 
 const onSubmit = async () => {
   const result = await faqsStore.submitQuestion({
     fullname: form.fullname,
     email: form.email,
     subject: form.subject,
-    message: form.message
-  })
+    message: form.message,
+  });
   if (result?.success) {
-    form.fullname = ''
-    form.email = ''
-    form.subject = ''
-    form.message = ''
+    form.fullname = "";
+    form.email = "";
+    form.subject = "";
+    form.message = "";
   }
-}
+};
 
 onMounted(() => {
-  faqsStore.fetchFaqs()
-})
+  faqsStore.fetchFaqs();
+});
 </script>
