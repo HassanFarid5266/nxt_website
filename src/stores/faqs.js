@@ -25,66 +25,6 @@ export const useFaqsStore = defineStore('faqs', () => {
       title: "Can I change my order after placing it?",
       description: "Orders can be updated within <b>24 hours</b> of placing them. Contact our support team for help."
     },
-    {
-      name: "general1",
-      title: "What services does NexTash offer?",
-      description: "NexTash specializes in a wide range of services including digitalization, branding, ERP development, web development, mobile app development, graphics designing, and digital marketing. We provide comprehensive solutions to help businesses thrive in the digital age."
-    },
-    {
-      name: "general2",
-      title: "Do you offer international shipping?",
-      description: "Yes, we ship worldwide. Delivery times vary depending on your location."
-    },
-    {
-      name: "general3",
-      title: "How can I track my order?",
-      description: "Once your order is shipped, you will receive a tracking link via email."
-    },
-    {
-      name: "general4",
-      title: "Can I change my order after placing it?",
-      description: "Orders can be updated within <b>24 hours</b> of placing them. Contact our support team for help."
-    },
-    {
-      name: "general1",
-      title: "What services does NexTash offer?",
-      description: "NexTash specializes in a wide range of services including digitalization, branding, ERP development, web development, mobile app development, graphics designing, and digital marketing. We provide comprehensive solutions to help businesses thrive in the digital age."
-    },
-    {
-      name: "general2",
-      title: "Do you offer international shipping?",
-      description: "Yes, we ship worldwide. Delivery times vary depending on your location."
-    },
-    {
-      name: "general3",
-      title: "How can I track my order?",
-      description: "Once your order is shipped, you will receive a tracking link via email."
-    },
-    {
-      name: "general4",
-      title: "Can I change my order after placing it?",
-      description: "Orders can be updated within <b>24 hours</b> of placing them. Contact our support team for help."
-    },
-    {
-      name: "general1",
-      title: "What services does NexTash offer?",
-      description: "NexTash specializes in a wide range of services including digitalization, branding, ERP development, web development, mobile app development, graphics designing, and digital marketing. We provide comprehensive solutions to help businesses thrive in the digital age."
-    },
-    {
-      name: "general2",
-      title: "Do you offer international shipping?",
-      description: "Yes, we ship worldwide. Delivery times vary depending on your location."
-    },
-    {
-      name: "general3",
-      title: "How can I track my order?",
-      description: "Once your order is shipped, you will receive a tracking link via email."
-    },
-    {
-      name: "general4",
-      title: "Can I change my order after placing it?",
-      description: "Orders can be updated within <b>24 hours</b> of placing them. Contact our support team for help."
-    },
   ])
   const loading = ref(false)
   const submitting = ref(false)

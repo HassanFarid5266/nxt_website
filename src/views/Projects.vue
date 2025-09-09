@@ -1,11 +1,5 @@
 <template>
   <main>
-    <SEO 
-      title="Our Projects - NexTash"
-      description="Explore our portfolio of successful projects across web development, mobile apps, and digital solutions."
-      keywords="portfolio, projects, case studies, web development, mobile apps, digital solutions"
-    />
-    
     <!-- HERO SECTION -->
     <section class="hero-section">
       <div class="boxed">
@@ -107,13 +101,11 @@
 </template>
 
 <script>
-import SEO from '@/components/SEO.vue'
 import ProjectCard from '@/components/ProjectCard.vue'
 
 export default {
   name: 'Projects',
   components: {
-    SEO,
     ProjectCard
   },
   data() {

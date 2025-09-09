@@ -44,7 +44,7 @@ import { ref, onMounted } from 'vue'
 import Navbar from '@/layout/Navbar.vue'
 import Sidebar from '@/layout/Sidebar.vue'
 import Footer from '@/layout/Footer.vue'
-import Cta from "@/layout/Cta.vue";
+import Cta from "@/components/Cta.vue";
 
 const isLoading = ref(true)
 const loadingProgress = ref(0)

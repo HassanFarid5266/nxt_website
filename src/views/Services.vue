@@ -1,11 +1,5 @@
 <template>
   <main>
-    <SEO 
-      title="Our Services - NexTash"
-      description="Discover our comprehensive range of digital services including web development, mobile apps, cloud solutions, and more."
-      keywords="web development, mobile apps, cloud solutions, digital services, software development"
-    />
-    
     <section class="page-header">
       <div class="boxed">
         <div class="page-header-content">
@@ -86,12 +80,11 @@
 </template>
 
 <script>
-import SEO from '@/components/SEO.vue'
 import ServiceCard from '@/components/ServiceCard.vue'
 
 export default {
   name: 'Services',
-  components: { SEO, ServiceCard },
+  components: { ServiceCard },
   data() {
     return {
       services: [

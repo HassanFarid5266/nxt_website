@@ -13,15 +13,7 @@
     <div class="boxed">
       <!-- LEFT SIDE FAQ -->
       <section class="col-left" data-aos-duration="1000" data-aos="fade-right" data-aos-once="true" data-aos-easing="ease-in-out">
-        <div class="collapsible" id="faqs">
-          <div class="collapse-item" v-for="item in faqs" :key="item.name" :class="{ active: openFaq === item.name }" data-aos-duration="1000" data-aos="fade-up" data-aos-easing="ease-in-out">
-            <button class="collapse-head" type="button" @click="toggleFaq(item.name)"
-              :aria-expanded="openFaq === item.name">
-              {{ item.title }}
-            </button>
-            <div class="collapse-body" :id="`faq${item.name}`" v-html="item.description"></div>
-          </div>
-        </div>
+        <Faqs />
       </section>
 
       <!-- RIGHT SIDE FORM -->
@@ -67,14 +59,15 @@
 </template>
 
 <script setup>
-import { ref, reactive, computed, onMounted } from "vue";
+import { reactive, computed } from "vue";
+import Faqs from "@/components/Faq.vue";
 import { useFaqsStore } from "@/stores/faqs.js";
 
 const faqsStore = useFaqsStore();
-const faqs = computed(() => faqsStore.getFaqs);
 const isSubmitting = computed(() => faqsStore.isSubmitting);
 const feedbackMessage = computed(() => faqsStore.feedbackMessage);
 const feedbackType = computed(() => faqsStore.feedbackType);
+
 
 const form = reactive({
   fullname: "",
@@ -82,12 +75,6 @@ const form = reactive({
   subject: "",
   message: "",
 });
-
-const openFaq = ref(null);
-
-const toggleFaq = (name) => {
-  openFaq.value = openFaq.value === name ? null : name;
-};
 
 const onSubmit = async () => {
   const result = await faqsStore.submitQuestion({
@@ -103,8 +90,4 @@ const onSubmit = async () => {
     form.message = "";
   }
 };
-
-onMounted(() => {
-  faqsStore.fetchFaqs();
-});
 </script>

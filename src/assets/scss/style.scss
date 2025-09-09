@@ -1,7 +1,5 @@
 @import "./app/_app";
 @import "./mixins/_mixins";
-@import "./fonts/_fonts";
-@import "./libs/_libs";
 @import "./components/_components";
 @import "./pages/_pages";
 @import "./utils/_utils";
@@ -17,7 +15,6 @@
   opacity: 0;
 }
 
-/* Ensure router-link styling matches original links */
 a.router-link-active {
   color: inherit;
   text-decoration: none;

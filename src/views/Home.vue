@@ -652,7 +652,7 @@
 					</article>
 				</div>
 				<div class="readmore">
-					<span class="btn-outline">It's a long list, excited to check?</span>
+					<router-link to="/projects" class="btn-outline">It's a long list, excited to check?</router-link>
 				</div>
 			</div>
 		</section>

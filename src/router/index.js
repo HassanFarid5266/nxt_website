@@ -11,7 +11,6 @@ import TeamMember from '@/views/TeamMember.vue'
 import Careers from '@/views/Careers.vue'
 import Blogs from '@/views/Blogs.vue'
 import BlogPost from '@/views/BlogPost.vue'
-import CaseStudy from '@/views/CaseStudy.vue'
 import Job from '@/views/Job.vue'
 import Partners from '@/views/Partners.vue'
 import Faqs from '@/views/Faqs.vue'
@@ -19,7 +18,6 @@ import TermsAndConditions from '@/views/TermsAndConditions.vue'
 import PrivacyPolicy from '@/views/PrivacyPolicy.vue'
 import CookiesPolicy from '@/views/CookiesPolicy.vue'
 import RefundsPolicy from '@/views/RefundsPolicy.vue'
-import Credits from '@/views/Credits.vue'
 import Error403 from '@/views/Error403.vue'
 import Error404 from '@/views/Error404.vue'
 import Error500 from '@/views/Error500.vue'
@@ -78,11 +76,6 @@ const routes = [
     props: true
   },
   {
-    path: '/case-study',
-    name: 'CaseStudy',
-    component: CaseStudy
-  },
-  {
     path: '/job/:id',
     name: 'Job',
     component: Job,
@@ -117,11 +110,6 @@ const routes = [
     path: '/refunds-policy',
     name: 'RefundsPolicy',
     component: RefundsPolicy
-  },
-  {
-    path: '/credits',
-    name: 'Credits',
-    component: Credits
   },
   {
     path: '/403',
