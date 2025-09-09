@@ -9,7 +9,7 @@
               <router-link to="/about-us" class="list-link" @click="toggleSidebar"> About </router-link>
             </li>
             <li class="list-item">
-              <router-link to="/services" class="list-link" @click="toggleSidebar"> Services </router-link>
+              <router-link to="/products" class="list-link" @click="toggleSidebar"> Products </router-link>
             </li>
             <li class="list-item">
               <router-link to="/projects" class="list-link" @click="toggleSidebar"> Projects </router-link>
@@ -37,7 +37,8 @@
           <h4 class="section-subtitle">Policies</h4>
           <ul class="list policies-list" type="none">
             <li class="list-item">
-              <router-link to="/terms-and-conditions" class="list-link" @click="toggleSidebar">Terms And Conditions</router-link>
+              <router-link to="/terms-and-conditions" class="list-link" @click="toggleSidebar">Terms And
+                Conditions</router-link>
             </li>
             <li class="list-item">
               <router-link to="/privacy-policy" class="list-link" @click="toggleSidebar">Privacy Policy</router-link>
@@ -65,32 +66,24 @@
   </aside>
 </template>
 
-<script>
+<script setup>
 import { useSidebarStore } from '@/stores/sidebar'
+import { computed, watch } from 'vue'
 
-export default {
-  name: 'Sidebar',
-  computed: {
-    isOpen() {
-      return useSidebarStore().isOpen
-    }
-  },
-  watch: {
-    isOpen(newVal) {
-      if (newVal) {
-        document.body.style.overflowY = 'hidden'
-        document.documentElement.style.overflowY = 'hidden'
-      } else {
-        document.body.style.overflowY = 'auto'
-        document.documentElement.style.overflowY = 'auto'
-      }
-    }
-  },
-  methods: {
-    toggleSidebar() {
-      const sidebarStore = useSidebarStore()
-      sidebarStore.toggle()
-    }
-  }
+const sidebarStore = useSidebarStore()
+const isOpen = computed(() => sidebarStore.isOpen)
+
+const toggleSidebar = () => {
+  sidebarStore.toggle()
 }
+
+watch(isOpen, (newVal) => {
+  if (newVal) {
+    document.body.style.overflowY = 'hidden'
+    document.documentElement.style.overflowY = 'hidden'
+  } else {
+    document.body.style.overflowY = 'auto'
+    document.documentElement.style.overflowY = 'auto'
+  }
+})
 </script>

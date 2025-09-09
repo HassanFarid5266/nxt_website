@@ -3,10 +3,10 @@
     <section class="page-header">
       <div class="boxed">
         <div class="page-header-content">
-          <b class="section-badge">Services</b>
-          <h1 class="section-title">Our Digital Solutions</h1>
+          <b class="section-badge">Products</b>
+          <h1 class="section-title">Our Digital Products</h1>
           <p class="section-desc">
-            We provide comprehensive digital solutions to help businesses thrive in the modern world. 
+            We provide comprehensive digital products to help businesses thrive in the modern world. 
             From web development to cloud infrastructure, we've got you covered.
           </p>
         </div>
@@ -79,23 +79,14 @@
   </main>
 </template>
 
-<script>
+<script setup>
 import ServiceCard from '@/components/ServiceCard.vue'
-
-export default {
-  name: 'Services',
-  components: { ServiceCard },
-  data() {
-    return {
-      services: [
-        { id: 1, title: 'Web Development', description: 'Custom web applications built with modern technologies and best practices.', icon: 'bx bx-code-alt', iconBgColor: '#ff0000', features: ['Responsive Design', 'SEO Optimized', 'Fast Performance', 'Modern UI/UX'], link: '/services/web-development', variant: 'featured' },
-        { id: 2, title: 'Mobile App Development', description: 'Native and cross-platform mobile applications for iOS and Android.', icon: 'bx bx-mobile-alt', iconBgColor: '#007bff', features: ['Native Performance', 'Cross-platform', 'App Store Ready', 'Push Notifications'], link: '/services/mobile-app-development', variant: 'default' },
-        { id: 3, title: 'Cloud Solutions', description: 'Scalable cloud infrastructure and migration services.', icon: 'bx bx-cloud', iconBgColor: '#28a745', features: ['AWS/Azure/GCP', 'Auto-scaling', 'Cost Optimization', 'Security First'], link: '/services/cloud-hosting', variant: 'default' },
-        { id: 4, title: 'DevOps Services', description: 'Streamline your development and deployment processes.', icon: 'bx bx-cog', iconBgColor: '#6f42c1', features: ['CI/CD Pipelines', 'Infrastructure as Code', 'Monitoring', 'Automation'], link: '/services/devops', variant: 'default' },
-        { id: 5, title: 'Digital Marketing', description: 'Data-driven digital marketing strategies to grow your business.', icon: 'bx bx-bullhorn', iconBgColor: '#fd7e14', features: ['SEO/SEM', 'Social Media', 'Content Marketing', 'Analytics'], link: '/services/digital-marketing', variant: 'default' },
-        { id: 6, title: 'UI/UX Design', description: 'Beautiful and intuitive user interfaces that enhance user experience.', icon: 'bx bx-palette', iconBgColor: '#e83e8c', features: ['User Research', 'Wireframing', 'Prototyping', 'User Testing'], link: '/services/graphics-designing', variant: 'default' }
-      ]
-    }
-  }
-}
+const services = [
+  { id: 1, title: 'Web Development', description: 'Custom web applications built with modern technologies and best practices.', icon: 'bx bx-code-alt', iconBgColor: '#ff0000', features: ['Responsive Design', 'SEO Optimized', 'Fast Performance', 'Modern UI/UX'], link: '/services/web-development', variant: 'featured' },
+  { id: 2, title: 'Mobile App Development', description: 'Native and cross-platform mobile applications for iOS and Android.', icon: 'bx bx-mobile-alt', iconBgColor: '#007bff', features: ['Native Performance', 'Cross-platform', 'App Store Ready', 'Push Notifications'], link: '/services/mobile-app-development', variant: 'default' },
+  { id: 3, title: 'Cloud Solutions', description: 'Scalable cloud infrastructure and migration services.', icon: 'bx bx-cloud', iconBgColor: '#28a745', features: ['AWS/Azure/GCP', 'Auto-scaling', 'Cost Optimization', 'Security First'], link: '/services/cloud-hosting', variant: 'default' },
+  { id: 4, title: 'DevOps Services', description: 'Streamline your development and deployment processes.', icon: 'bx bx-cog', iconBgColor: '#6f42c1', features: ['CI/CD Pipelines', 'Infrastructure as Code', 'Monitoring', 'Automation'], link: '/services/devops', variant: 'default' },
+  { id: 5, title: 'Digital Marketing', description: 'Data-driven digital marketing strategies to grow your business.', icon: 'bx bx-bullhorn', iconBgColor: '#fd7e14', features: ['SEO/SEM', 'Social Media', 'Content Marketing', 'Analytics'], link: '/services/digital-marketing', variant: 'default' },
+  { id: 6, title: 'UI/UX Design', description: 'Beautiful and intuitive user interfaces that enhance user experience.', icon: 'bx bx-palette', iconBgColor: '#e83e8c', features: ['User Research', 'Wireframing', 'Prototyping', 'User Testing'], link: '/services/graphics-designing', variant: 'default' }
+]
 </script>

@@ -35,7 +35,7 @@
                 <router-link to="/contact-us" class="list-link">Contact us</router-link>
               </li>
               <li class="list-item">
-                <router-link to="/services" class="list-link">Services</router-link>
+                <router-link to="/products" class="list-link">Products</router-link>
               </li>
               <li class="list-item">
                 <router-link to="/team" class="list-link">Team</router-link>
@@ -63,17 +63,13 @@
               Subscribe to our new feeds & stay tuned with NexTash updates.
             </p>
             <form @submit.prevent="submitNewsletter" class="input-group subscribe-form" id="newsletter_form">
-              <input 
-                type="email" 
-                id="newsletter_email" 
-                v-model="newsletterEmail"
-                placeholder="Email Address..." 
-                class="field" 
-                required
-              />
+              <input type="email" id="newsletter_email" v-model="newsletterEmail" placeholder="Email Address..."
+                class="field" required />
               <button type="submit" class="bx bx-send action-btn btn-send"></button>
             </form>
-            <p id="newsletter_feedback" v-if="newsletterFeedback" :class="{ 'msg-success': !newsletterFeedback.includes('Snap'), 'msg-danger': newsletterFeedback.includes('Snap') }">{{ newsletterFeedback }}</p>
+            <p id="newsletter_feedback" v-if="newsletterFeedback"
+              :class="{ 'msg-success': !newsletterFeedback.includes('Snap'), 'msg-danger': newsletterFeedback.includes('Snap') }">
+              {{ newsletterFeedback }}</p>
           </div>
         </div>
       </div>
@@ -111,28 +107,19 @@
   </footer>
 </template>
 
-<script>
-export default {
-  name: 'Footer',
-  data() {
-    return {
-      newsletterEmail: '',
-      newsletterFeedback: ''
-    }
-  },
-  methods: {
-    async submitNewsletter() {
-      try {
-        this.newsletterFeedback = 'Thank you for subscribing!'
-        this.newsletterEmail = ''
-        
-        setTimeout(() => {
-          this.newsletterFeedback = ''
-        }, 3000)
-      } catch (error) {
-        this.newsletterFeedback = 'Something went wrong. Please try again.'
-      }
-    }
+<script setup>
+import { ref } from 'vue';
+const newsletterEmail = ref('');
+const newsletterFeedback = ref('');
+const submitNewsletter = async () => {
+  try {
+    newsletterFeedback.value = 'Thank you for subscribing!';
+    newsletterEmail.value = '';
+    setTimeout(() => {
+      newsletterFeedback.value = '';
+    }, 3000);
+  } catch (error) {
+    newsletterFeedback.value = 'Something went wrong. Please try again.';
   }
-}
+};
 </script>
