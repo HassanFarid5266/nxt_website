@@ -8,7 +8,7 @@ export const useProjectsStore = defineStore('projects', () => {
       name: 'Multan University of Science & Technology Pakistan',
       category: 'Business Portfolio',
       description: 'Our team ensures the seamless functioning...',
-      images: ['/src/assets/images/projects/1.webp', '/src/assets/images/projects/2.webp'],
+      images: ['/src/assets/images/projects/1.webp', '/src/assets/images/projects/2.webp', '/src/assets/images/projects/3.webp', '/src/assets/images/projects/4.webp'],
       isShowHome: true,
     },
     {
@@ -16,7 +16,7 @@ export const useProjectsStore = defineStore('projects', () => {
       name: 'Project Management SaaS',
       category: 'SaaS',
       description: 'Comprehensive project management tool for teams',
-      images: ['/src/assets/images/projects/5.webp', '/src/assets/images/projects/6.webp'],
+      images: ['/src/assets/images/projects/5.webp', '/src/assets/images/projects/6.webp', '/src/assets/images/projects/7.webp', '/src/assets/images/projects/8.webp' ],
       isShowHome: true,
     },
     {
@@ -24,7 +24,7 @@ export const useProjectsStore = defineStore('projects', () => {
       name: 'Another Project',
       category: 'Business Portfolio',
       description: 'Some description here...',
-      images: ['/src/assets/images/projects/3.webp'],
+      images: ['/src/assets/images/projects/3.webp', '/src/assets/images/projects/4.webp', '/src/assets/images/projects/5.webp', '/src/assets/images/projects/6.webp'],
       isShowHome: false,
     },
     {
@@ -32,9 +32,17 @@ export const useProjectsStore = defineStore('projects', () => {
       name: 'ERP SaaS',
       category: 'SaaS',
       description: 'ERP platform with modules',
-      images: ['/src/assets/images/projects/7.webp'],
+      images: ['/src/assets/images/projects/7.webp', '/src/assets/images/projects/8.webp', '/src/assets/images/projects/9.webp', '/src/assets/images/projects/10.webp'],
       isShowHome: false,
-    }
+    },
+    {
+      id: 5,
+      name: 'ERP SaaS',
+      category: 'SaaS',
+      description: 'ERP platform with modules',
+      images: ['/src/assets/images/projects/7.webp', '/src/assets/images/projects/8.webp', '/src/assets/images/projects/9.webp', '/src/assets/images/projects/10.webp'],
+      isShowHome: false,
+    },
   ])
 
   // Getters

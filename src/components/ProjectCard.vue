@@ -19,8 +19,8 @@
 <script setup>
 const props = defineProps({
   projects: {
-    type: Boolean,
-    default: false,
+    type: Array,
+    default: () => [],
   },
 });
 

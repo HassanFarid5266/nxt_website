@@ -885,7 +885,8 @@
 <script setup>
 import { computed, onMounted } from 'vue'
 import TeamMembers from '@/components/TeamCard.vue'
-import BlogCard from '../components/BlogCard.vue'
+import BlogCard from '@/components/BlogCard.vue'
+import ProjectCard from '@/components/ProjectCard.vue'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Navigation } from 'swiper/modules'
 import { 

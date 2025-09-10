@@ -244,12 +244,13 @@
     </div>
     <br><br><br>
     <!-- PROJECTS -->
-    <section class="boxed case-studies" id="listing"></section>
+    <section class="boxed case-studies" id="listing">
+      <ProjectCard :projects="visibleProjects" />
+    </section>
     <!-- PROJECTS -->
 
-    <section class="readmore project-readmore">
-        <button class="btn-outline square-to-circle" id="loadmore">Load More</button>
-        
+    <section class="readmore project-readmore" v-if="showLoadMoreButton">
+        <button class="btn-outline square-to-circle" @click="loadMoreProjects">Load More</button>        
         <div class="cat">
             <div class="ear ear--left"></div>
             <div class="ear ear--right"></div>
@@ -268,12 +269,36 @@
   </main>
 </template>
 <script setup>
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
 import ProjectCard from '@/components/ProjectCard.vue';
+import { useProjectsStore } from '@/stores';
+
+// Initialize store
+const projectsStore = useProjectsStore();
 
 const currentPage = ref(1);
+const projectsPerPage = 3;
 
-const loadMoreProjects = () => {
-  currentPage.value++;
+// Get all projects
+const allProjects = computed(() => projectsStore.getProjects);
+
+// Calculate visible projects based on current page
+const visibleProjects = computed(() => {
+  const startIndex = 0;
+  const endIndex = currentPage.value * projectsPerPage;
+  return allProjects.value.slice(startIndex, endIndex);
+});
+
+// Check if there are more projects to load
+const showLoadMoreButton = computed(() => {
+  return visibleProjects.value.length < allProjects.value.length;
+});
+
+const loadMoreProjects = (e) => {
+  e.preventDefault();
+  if (showLoadMoreButton.value) {
+    currentPage.value++;
+    console.log(`Page ${currentPage.value}: Showing ${visibleProjects.value.length} of ${allProjects.value.length} projects`);
+  }
 };
 </script>
