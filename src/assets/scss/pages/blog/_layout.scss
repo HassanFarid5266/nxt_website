@@ -5,8 +5,21 @@
   position: relative;
   z-index: 10;
   margin-bottom: 100px;
-  .section-badge{
+  @media (max-width: 320px) {
+    width: 85%;
+    margin: 0 auto 40px;
+  }
+  .section-badge {
     margin-bottom: 30px;
+  }
+  .page-head {
+    .page-image {
+      .image {
+        @media (max-width: 320px) {
+          object-fit: unset;
+        }
+      }
+    }
   }
 
   .section-title {

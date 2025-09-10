@@ -65,9 +65,11 @@
     font-size: 1.2rem;
   }
 
+  ul, ol {
+    list-style-position: inside;
+  }
   ul {
     margin-bottom: 20px;
-    list-simpletyle-position: inside;
   }
   a {
     color: var(--primary);

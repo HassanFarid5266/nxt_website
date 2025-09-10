@@ -1,5 +1,4 @@
 <template>
-  <div id="app">
     <!-- LOADING SCREEN -->
     <div class="loading-page" v-show="isLoading">
       <div class="counter">
@@ -36,7 +35,6 @@
     <!-- FOOTER -->
     <Footer />
     <!-- FOOTER -->
-  </div>
 </template>
 
 <script setup>

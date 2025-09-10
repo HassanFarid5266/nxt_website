@@ -28,10 +28,8 @@
         <h3 class="section-title">Relatable blogs</h3>
       </div>
       <Swiper :modules="modules" :slides-per-view="1" :breakpoints="{
-        340: { slidesPerView: 1 },
-        576: { slidesPerView: 1 },
-        768: { slidesPerView: 2 },
-        992: { slidesPerView: 3 }
+					640: { slidesPerView: 2 },
+					1025: { slidesPerView: 3 },
       }" navigation class="carousel">
         <SwiperSlide v-for="b in related" :key="b.id">
           <BlogCard :blog="b" />
