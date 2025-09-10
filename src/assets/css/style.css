@@ -1256,6 +1256,12 @@ body::-webkit-scrollbar-track {
   --card-image-br: 50%;
   text-align: center;
 }
+@media (min-width: 2260px) {
+  .card-team {
+    --card-title-fs: clamp(18px, 80vw, 27px);
+    --card-desc-size: clamp(14px, 80vw, 19px);
+  }
+}
 .card-team .card-image {
   overflow: hidden;
   background-color: var(--dark);
@@ -1282,6 +1288,15 @@ body::-webkit-scrollbar-track {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+@media (max-width: 340px) {
+  .card-ceo {
+    --card-image-w: 240px;
+    --card-image-h: 240px;
+    --card-head-p: 1.5rem 1rem;
+    --card-body-p: 1.5rem 1rem;
+    --card-foot-p: 1.5rem 1rem;
   }
 }
 .card-ceo .card-body {
@@ -2636,6 +2651,14 @@ body::-webkit-scrollbar-track {
           justify-content: space-between;
   margin-top: 30px;
 }
+@media (max-width: 375px) {
+  .process .row-cols-2 .row-process {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+    grid-template-columns: auto auto;
+  }
+}
 .process .row-cols-2 .row-process .col .process-icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2651,6 +2674,11 @@ body::-webkit-scrollbar-track {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media (max-width: 375px) {
+  .process .row-cols-2 .row-process .col .process-icon {
+    width: 100%;
+  }
+}
 .process .row-cols-2 .row-process .col .process-icon .icon {
   width: 100px;
   height: 100px;
@@ -2663,6 +2691,18 @@ body::-webkit-scrollbar-track {
     width: 80px;
     height: 80px;
     margin-bottom: 5px;
+  }
+}
+@media (max-width: 375px) {
+  .process .row-cols-2 .row-process .col .process-icon .icon {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 375px) {
+  .process .row-cols-2 .row-process .col .process-icon .icon svg {
+    width: 60%;
   }
 }
 .process .row-cols-2 .row-process .col .process-icon .icon-text {
@@ -2731,11 +2771,16 @@ body::-webkit-scrollbar-track {
 }
 
 .page-head {
-  background-image: url("../images/bg-swirl-3.webp");
+  background-image: url(/assets/images/bg-swirl-3.webp);
   background-position: bottom right;
   background-size: cover;
   padding-top: 8rem;
   padding-bottom: 5rem;
+}
+@media (max-width: 992px) {
+  .page-head {
+    padding-bottom: 1rem;
+  }
 }
 .page-head .page-title {
   color: var(--text);
@@ -2744,10 +2789,26 @@ body::-webkit-scrollbar-track {
   margin-bottom: 1rem;
   width: clamp(300px, 80vw, 1200px);
 }
+@media (max-width: 768px) {
+  .page-head .page-title {
+    font-size: clamp(20px, 80vw, 48px);
+    word-wrap: break-word;
+  }
+}
 @media (max-width: 576px) {
   .page-head .page-title {
-    font-size: 34px;
+    font-size: clamp(20px, 80vw, 40px);
     line-height: 50px;
+  }
+}
+@media (max-width: 375px) {
+  .page-head .page-title {
+    font-size: clamp(20px, 80vw, 35px);
+  }
+}
+@media (max-width: 320px) {
+  .page-head .page-title {
+    font-size: clamp(20px, 80vw, 30px);
   }
 }
 .page-head .page-subtitle {
@@ -2805,6 +2866,11 @@ body::-webkit-scrollbar-track {
   border-radius: var(--rounded);
   margin: 4rem 0;
 }
+@media (max-width: 768px) {
+  .page-head .page-image {
+    height: auto;
+  }
+}
 .page-head .page-image .image {
   width: 100%;
   height: 100%;
@@ -2813,6 +2879,14 @@ body::-webkit-scrollbar-track {
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
+}
+@media (max-width: 768px) {
+  .page-head .page-image .image {
+    -o-object-fit: unset;
+       object-fit: unset;
+    -o-object-position: unset;
+       object-position: unset;
+  }
 }
 .page-head .page-list {
   margin: 0;
@@ -2837,6 +2911,11 @@ body::-webkit-scrollbar-track {
   .page-head .page-desc,
   .page-head .page-list li {
     width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .page-head .row-cols-2 {
+    display: block;
   }
 }
 
@@ -3050,6 +3129,11 @@ body::-webkit-scrollbar-track {
       -ms-flex-align: center;
           align-items: center;
   width: clamp(330px, 80vw, 800px);
+}
+@media (max-width: 320px) {
+  .section-center {
+    width: auto;
+  }
 }
 
 .welcome-section {
@@ -3773,7 +3857,7 @@ svg #airplain {
 }
 @media (min-width: 576px) {
   .boxed {
-    --box-width: 97%;
+    --box-width: 90%;
   }
 }
 @media (min-width: 768px) {
@@ -3794,6 +3878,11 @@ svg #airplain {
 @media (min-width: 1400px) {
   .boxed {
     --box-width: 70%;
+  }
+}
+@media (max-width: 576px) {
+  .boxed {
+    --box-width: 85%;
   }
 }
 

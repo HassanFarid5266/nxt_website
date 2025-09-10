@@ -4,6 +4,10 @@
   --card-image-h: 200px;
   --card-image-br: 50%;
   text-align: center;
+  @media (min-width: 2260px) {
+    --card-title-fs: clamp(18px, 80vw, 27px);
+    --card-desc-size: clamp(14px, 80vw, 19px);
+  }
   .card-image {
     overflow: hidden;
     background-color: var(--dark);
@@ -21,6 +25,13 @@
   align-items: center;
   @media (max-width: screen-size(lg)) {
     flex-direction: column;
+  }
+  @media (max-width: screen-size(xs)) {
+    --card-image-w: 240px;
+    --card-image-h: 240px;
+    --card-head-p: 1.5rem 1rem;
+    --card-body-p: 1.5rem 1rem;
+    --card-foot-p: 1.5rem 1rem;
   }
   .card-body {
     text-align: left;
