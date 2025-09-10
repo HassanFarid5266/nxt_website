@@ -865,9 +865,8 @@
 
 				<Swiper :modules="modules" :slides-per-view="1" :breakpoints="{
 					340: { slidesPerView: 1 },
-					576: { slidesPerView: 1 },
-					768: { slidesPerView: 2 },
-					992: { slidesPerView: 3 }
+					640: { slidesPerView: 2 },
+					1025: { slidesPerView: 3 },
 				}" navigation class="carousel">
 					<SwiperSlide v-for="post in homeBlogs" :key="post.id">
 						<BlogCard :blog="post" />
