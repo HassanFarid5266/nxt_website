@@ -2,10 +2,8 @@ import { defineStore } from 'pinia'
 import { ref } from 'vue'
 
 export const useSidebarStore = defineStore('sidebar', () => {
-  // State
   const isOpen = ref(false)
   
-  // Actions
   const toggle = () => {
     isOpen.value = !isOpen.value
   }
@@ -19,10 +17,7 @@ export const useSidebarStore = defineStore('sidebar', () => {
   }
 
   return {
-    // State
     isOpen,
-    
-    // Actions
     toggle,
     open,
     close

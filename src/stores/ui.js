@@ -2,16 +2,13 @@ import { defineStore } from 'pinia'
 import { ref } from 'vue'
 
 export const useUIStore = defineStore('ui', () => {
-  // State
   const isLazyLoadingInitialized = ref(false)
 
-  // Actions
   const initLazyLoading = () => {
     if (isLazyLoadingInitialized.value) return
     
     const lazyImages = document.querySelectorAll('.lazy-load')
     if (!('IntersectionObserver' in window)) {
-      // Fallback for older browsers
       lazyImages.forEach(img => {
         const dataSrc = img.getAttribute('data-src')
         if (dataSrc) {

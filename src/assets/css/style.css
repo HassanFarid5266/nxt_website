@@ -2676,6 +2676,9 @@ body::-webkit-scrollbar-track {
   margin-bottom: 60px;
   text-align: center;
 }
+.readmore .btn-outline {
+  z-index: 95;
+}
 
 .know-more {
   margin-top: 20px;

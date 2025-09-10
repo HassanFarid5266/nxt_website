@@ -2,7 +2,6 @@ import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
 
 export const useTestimonialsStore = defineStore('testimonials', () => {
-  // State
   const testimonials = ref([
     { 
       full_name: 'John Smith', 
@@ -38,7 +37,7 @@ export const useTestimonialsStore = defineStore('testimonials', () => {
     }
   ])
 
-  // Getters
+  // 
   const getTestimonials = computed(() => testimonials.value)
   const getTestimonialById = computed(() => (id) => testimonials.value.find(testimonial => testimonial.id === id))
   const getTestimonialsByRating = computed(() => (rating) => 
@@ -49,7 +48,7 @@ export const useTestimonialsStore = defineStore('testimonials', () => {
     return testimonials.value[randomIndex]
   })
 
-  // Actions
+  // 
   const addTestimonial = (testimonial) => {
     const newId = Math.max(...testimonials.value.map(t => t.id || 0)) + 1
     testimonials.value.push({ ...testimonial, id: newId })
@@ -82,16 +81,13 @@ export const useTestimonialsStore = defineStore('testimonials', () => {
   }
 
   return {
-    // State
     testimonials,
     
-    // Getters
     getTestimonials,
     getTestimonialById,
     getTestimonialsByRating,
     getRandomTestimonial,
     
-    // Actions
     addTestimonial,
     updateTestimonial,
     removeTestimonial,

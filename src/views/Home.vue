@@ -636,20 +636,7 @@
 					<h3 class="section-title">Brief 2 of 200+</h3>
 				</div>
 				<div class="case-studies">
-					<article class="card card-case-study " v-for="project in projectsStore.getProjects" :key="project.id"
-						data-aos-duration="1000" data-aos="fade-down" data-aos-once="true">
-						<div class="card-head">
-							<div class="product-image" v-for="(img, idx) in project.images" :key="idx">
-								<img :src="img" class="image lazy-load" :alt="project.name" />
-							</div>
-						</div>
-						<div class="card-hoverable card-body bg-three" data-aos-duration="1000" data-aos="fade-up"
-							data-aos-once="true">
-							<span class="card-badge">{{ project.category }}</span>
-							<h3 class="card-title">{{ project.name }}</h3>
-							<p class="card-desc">{{ project.description }}</p>
-						</div>
-					</article>
+					<ProjectCard :projects="projectsStore.getHomeProjects" />
 				</div>
 				<div class="readmore">
 					<router-link to="/projects" class="btn-outline">It's a long list, excited to check?</router-link>
