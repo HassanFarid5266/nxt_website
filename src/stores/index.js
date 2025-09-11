@@ -9,6 +9,7 @@ export { useTestimonialsStore } from './testimonials.js'
 export { useClientsStore } from './clients.js'
 export { useUIStore } from './ui.js'
 export { useFaqsStore } from './faqs.js'
+export { usePartnersStore } from './partner.js'
 
 export const useMainStore = () => {
   return {
@@ -21,6 +22,7 @@ export const useMainStore = () => {
     testimonials: useTestimonialsStore(),
     clients: useClientsStore(),
     ui: useUIStore(),
-    faqs: useFaqsStore()
+    faqs: useFaqsStore(),
+    partner: usePartnersStore()
   }
 }

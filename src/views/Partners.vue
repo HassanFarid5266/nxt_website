@@ -1,19 +1,4 @@
 <template>
-    <section class="page-head">
-        <div class="boxed">
-            <span class="page-badge">Our Trusted Partnerships</span>
-            <h1 class="page-title">Empowering Partnerships, Elevating Possibilities.</h1>
-            <p class="page-desc">
-                At NexTash, we believe in the power of collaboration and synergy. Our partnerships are the cornerstone
-                of our success, driving innovation and delivering exceptional results to our clients. Together, we
-                leverage
-                expertise, technology, and creativity to unlock new opportunities and achieve remarkable outcomes. Join
-                us
-                on our journey as we shape the future of IT together.
-            </p>
-        </div>
-    </section>
-
     <main class="partner-page">
         <!-- WELCOME -->
         <section class="welcome">
@@ -43,7 +28,7 @@
             </div>
             <div class="weclome-right">
                 <div class="welcome-image">
-                    <img src="./assets/images/partner/nxt_logo.png" alt="Nextash Logo" class="logo" />
+                    <img src="@/assets/images/partner/nxt_logo.png" alt="Nextash Logo" class="logo" />
                 </div>
                 <div class="welcome-slider">
                     <div class="slider">
@@ -51,32 +36,32 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="image">
-                                        <img src="./assets/images/partner/ammar.png" alt="Partner Image" class="img" />
+                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="image">
-                                        <img src="./assets/images/partner/ammar.png" alt="Partner Image" class="img" />
+                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="image">
-                                        <img src="./assets/images/partner/ammar.png" alt="Partner Image" class="img" />
+                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="image">
-                                        <img src="./assets/images/partner/ammar.png" alt="Partner Image" class="img" />
+                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="image">
-                                        <img src="./assets/images/partner/ammar.png" alt="Partner Image" class="img" />
+                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="image">
-                                        <img src="./assets/images/partner/ammar.png" alt="Partner Image" class="img" />
+                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
                                     </div>
                                 </div>
                             </div>
@@ -87,62 +72,62 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="image">
-                                        <img src="./assets/images/partner/ammar.png" alt="Partner Image" class="img" />
+                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="image">
-                                        <img src="./assets/images/partner/ammar.png" alt="Partner Image" class="img" />
+                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="image">
-                                        <img src="./assets/images/partner/ammar.png" alt="Partner Image" class="img" />
+                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="image">
-                                        <img src="./assets/images/partner/ammar.png" alt="Partner Image" class="img" />
+                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="image">
-                                        <img src="./assets/images/partner/ammar.png" alt="Partner Image" class="img" />
+                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="image">
-                                        <img src="./assets/images/partner/ammar.png" alt="Partner Image" class="img" />
+                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="image">
-                                        <img src="./assets/images/partner/ammar.png" alt="Partner Image" class="img" />
+                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="image">
-                                        <img src="./assets/images/partner/ammar.png" alt="Partner Image" class="img" />
+                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="image">
-                                        <img src="./assets/images/partner/ammar.png" alt="Partner Image" class="img" />
+                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="image">
-                                        <img src="./assets/images/partner/ammar.png" alt="Partner Image" class="img" />
+                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="image">
-                                        <img src="./assets/images/partner/ammar.png" alt="Partner Image" class="img" />
+                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="image">
-                                        <img src="./assets/images/partner/ammar.png" alt="Partner Image" class="img" />
+                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
                                     </div>
                                 </div>
                             </div>
@@ -153,32 +138,32 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="image">
-                                        <img src="./assets/images/partner/ammar.png" alt="Partner Image" class="img" />
+                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="image">
-                                        <img src="./assets/images/partner/ammar.png" alt="Partner Image" class="img" />
+                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="image">
-                                        <img src="./assets/images/partner/ammar.png" alt="Partner Image" class="img" />
+                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="image">
-                                        <img src="./assets/images/partner/ammar.png" alt="Partner Image" class="img" />
+                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="image">
-                                        <img src="./assets/images/partner/ammar.png" alt="Partner Image" class="img" />
+                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="image">
-                                        <img src="./assets/images/partner/ammar.png" alt="Partner Image" class="img" />
+                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
                                     </div>
                                 </div>
                             </div>
@@ -196,214 +181,11 @@
             </div>
             <div class="boxed">
                 <div class="partners-cards">
-                    <article class="card card-partners">
-                        <div class="card-head">
-                            <div class="card-image">
-                                <img src="./assets//images/partner/ammar.png" alt="" class="image" />
-                                <div class="explore">
-                                    <div class="exp"></div>
-                                    <h2>Explore</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">Ammar Shahid</div>
-                            <div class="card-desc">
-                                Developer & Designer <span>|</span> Nextash
-                            </div>
-                            <div class="social-links">
-                                <a href="https://github.com/mianshahid720" class="bx bxl-github social-icon"
-                                    target="_blank"></a>
-                                <a href="https://www.linkedin.com/in/shahid-mehmood-89a722248"
-                                    class="bx bxl-linkedin social-icon" target="_blank"></a>
-                                <a href="https://www.linkedin.com/in/shahid-mehmood-89a722248"
-                                    class="bx bxl-instagram social-icon" target="_blank"></a>
-                            </div>
-                        </div>
-                        <div class="card-foot"></div>
-                    </article>
-                    <article class="card card-partners">
-                        <div class="card-head">
-                            <div class="card-image">
-                                <img src="./assets//images/partner/ammar.png" alt="" class="image" />
-                                <div class="explore">
-                                    <div class="exp"></div>
-                                    <h2>Explore</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">Ammar Shahid</div>
-                            <div class="card-desc">
-                                Developer & Designer <span>|</span> Nextash
-                            </div>
-                            <div class="social-links">
-                                <a href="https://github.com/mianshahid720" class="bx bxl-github social-icon"
-                                    target="_blank"></a>
-                                <a href="https://www.linkedin.com/in/shahid-mehmood-89a722248"
-                                    class="bx bxl-linkedin social-icon" target="_blank"></a>
-                                <a href="https://www.linkedin.com/in/shahid-mehmood-89a722248"
-                                    class="bx bxl-instagram social-icon" target="_blank"></a>
-                            </div>
-                        </div>
-                        <div class="card-foot"></div>
-                    </article>
-                    <article class="card card-partners">
-                        <div class="card-head">
-                            <div class="card-image">
-                                <img src="./assets//images/partner/ammar.png" alt="" class="image" />
-                                <div class="explore">
-                                    <div class="exp"></div>
-                                    <h2>Explore</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">Ammar Shahid</div>
-                            <div class="card-desc">
-                                Developer & Designer <span>|</span> Nextash
-                            </div>
-                            <div class="social-links">
-                                <a href="https://github.com/mianshahid720" class="bx bxl-github social-icon"
-                                    target="_blank"></a>
-                                <a href="https://www.linkedin.com/in/shahid-mehmood-89a722248"
-                                    class="bx bxl-linkedin social-icon" target="_blank"></a>
-                                <a href="https://www.linkedin.com/in/shahid-mehmood-89a722248"
-                                    class="bx bxl-instagram social-icon" target="_blank"></a>
-                            </div>
-                        </div>
-                        <div class="card-foot"></div>
-                    </article>
-                    <article class="card card-partners">
-                        <div class="card-head">
-                            <div class="card-image">
-                                <img src="./assets//images/partner/ammar.png" alt="" class="image" />
-                                <div class="explore">
-                                    <div class="exp"></div>
-                                    <h2>Explore</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">Ammar Shahid</div>
-                            <div class="card-desc">
-                                Developer & Designer <span>|</span> Nextash
-                            </div>
-                            <div class="social-links">
-                                <a href="https://github.com/mianshahid720" class="bx bxl-github social-icon"
-                                    target="_blank"></a>
-                                <a href="https://www.linkedin.com/in/shahid-mehmood-89a722248"
-                                    class="bx bxl-linkedin social-icon" target="_blank"></a>
-                                <a href="https://www.linkedin.com/in/shahid-mehmood-89a722248"
-                                    class="bx bxl-instagram social-icon" target="_blank"></a>
-                            </div>
-                        </div>
-                        <div class="card-foot"></div>
-                    </article>
-                    <article class="card card-partners">
-                        <div class="card-head">
-                            <div class="card-image">
-                                <img src="./assets//images/partner/ammar.png" alt="" class="image" />
-                                <div class="explore">
-                                    <div class="exp"></div>
-                                    <h2>Explore</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">Ammar Shahid</div>
-                            <div class="card-desc">
-                                Developer & Designer <span>|</span> Nextash
-                            </div>
-                            <div class="social-links">
-                                <a href="https://github.com/mianshahid720" class="bx bxl-github social-icon"
-                                    target="_blank"></a>
-                                <a href="https://www.linkedin.com/in/shahid-mehmood-89a722248"
-                                    class="bx bxl-linkedin social-icon" target="_blank"></a>
-                                <a href="https://www.linkedin.com/in/shahid-mehmood-89a722248"
-                                    class="bx bxl-instagram social-icon" target="_blank"></a>
-                            </div>
-                        </div>
-                        <div class="card-foot"></div>
-                    </article>
-                    <article class="card card-partners">
-                        <div class="card-head">
-                            <div class="card-image">
-                                <img src="./assets//images/partner/ammar.png" alt="" class="image" />
-                                <div class="explore">
-                                    <div class="exp"></div>
-                                    <h2>Explore</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">Ammar Shahid</div>
-                            <div class="card-desc">
-                                Developer & Designer <span>|</span> Nextash
-                            </div>
-                            <div class="social-links">
-                                <a href="https://github.com/mianshahid720" class="bx bxl-github social-icon"
-                                    target="_blank"></a>
-                                <a href="https://www.linkedin.com/in/shahid-mehmood-89a722248"
-                                    class="bx bxl-linkedin social-icon" target="_blank"></a>
-                                <a href="https://www.linkedin.com/in/shahid-mehmood-89a722248"
-                                    class="bx bxl-instagram social-icon" target="_blank"></a>
-                            </div>
-                        </div>
-                        <div class="card-foot"></div>
-                    </article>
-                    <article class="card card-partners">
-                        <div class="card-head">
-                            <div class="card-image">
-                                <img src="./assets//images/partner/ammar.png" alt="" class="image" />
-                                <div class="explore">
-                                    <div class="exp"></div>
-                                    <h2>Explore</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">Ammar Shahid</div>
-                            <div class="card-desc">
-                                Developer & Designer <span>|</span> Nextash
-                            </div>
-                            <div class="social-links">
-                                <a href="https://github.com/mianshahid720" class="bx bxl-github social-icon"
-                                    target="_blank"></a>
-                                <a href="https://www.linkedin.com/in/shahid-mehmood-89a722248"
-                                    class="bx bxl-linkedin social-icon" target="_blank"></a>
-                                <a href="https://www.linkedin.com/in/shahid-mehmood-89a722248"
-                                    class="bx bxl-instagram social-icon" target="_blank"></a>
-                            </div>
-                        </div>
-                        <div class="card-foot"></div>
-                    </article>
-                    <article class="card card-partners">
-                        <div class="card-head">
-                            <div class="card-image">
-                                <img src="./assets//images/partner/ammar.png" alt="" class="image" />
-                                <div class="explore">
-                                    <div class="exp"></div>
-                                    <h2>Explore</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">Ammar Shahid</div>
-                            <div class="card-desc">
-                                Developer & Designer <span>|</span> Nextash
-                            </div>
-                            <div class="social-links">
-                                <a href="https://github.com/mianshahid720" class="bx bxl-github social-icon"
-                                    target="_blank"></a>
-                                <a href="https://www.linkedin.com/in/shahid-mehmood-89a722248"
-                                    class="bx bxl-linkedin social-icon" target="_blank"></a>
-                                <a href="https://www.linkedin.com/in/shahid-mehmood-89a722248"
-                                    class="bx bxl-instagram social-icon" target="_blank"></a>
-                            </div>
-                        </div>
-                        <div class="card-foot"></div>
-                    </article>
+                    <PartnerCard 
+                        v-for="partner in partnersStore.partners" 
+                        :key="partner.id" 
+                        :partner="partner" 
+                    />
                 </div>
             </div>
         </section>
@@ -434,16 +216,16 @@
                     <article class="card partnership-card">
                         <div class="card-head">
                             <div class="card-image image-zoom">
-                                <img src="./assets/images/partner/investor.png" alt="Investor image" class="image" />
+                                <img src="@/assets/images/partner/investor.png" alt="Investor image" class="image" />
                             </div>
                         </div>
                         <div class="card-body">
                             <div class="body-head">
-                                <img src="./assets/images/partner/before-right.png" class="arrow-img" />
+                                <img src="@/assets/images/partner/before-right.png" class="arrow-img" />
                                 <p class="card-desc">
                                     Invest in the Future of ERP & Earn Long-Term Profits
                                 </p>
-                                <img src="./assets/images/partner/after-right.png" class="arrow-img" />
+                                <img src="@/assets/images/partner/after-right.png" class="arrow-img" />
                             </div>
                             <div class="body-desc">
                                 <div class="card-title">
@@ -462,13 +244,13 @@
                                 </h2>
                                 <ul class="menu">
                                     <li class="list-item">
-                                        <img src="./assets/images/partner/dollar_icon.png" alt="Dollar Icon" />
+                                        <img src="@/assets/images/partner/dollar_icon.png" alt="Dollar Icon" />
                                         <p class="card-desc">
                                             Earn passive income through revenue sharing
                                         </p>
                                     </li>
                                     <li class="list-item">
-                                        <img src="./assets/images/partner/gala_chart.svg" alt="Chart Icon" />
+                                        <img src="@/assets/images/partner/gala_chart.svg" alt="Chart Icon" />
                                         <p class="card-desc">
                                             Get equity in
                                             <strong><span>N</span>extash</strong> ERP's future
@@ -476,7 +258,7 @@
                                         </p>
                                     </li>
                                     <li class="list-item">
-                                        <img src="./assets/images/partner/building.svg" alt="Building Icon" />
+                                        <img src="@/assets/images/partner/building.svg" alt="Building Icon" />
                                         <p class="card-desc">
                                             Exclusive decision-making rights & insights
                                         </p>
@@ -496,16 +278,16 @@
                     <article class="card partnership-card">
                         <div class="card-head">
                             <div class="card-image image-zoom">
-                                <img src="./assets/images/partner/reseller.png" alt="Reseller image" class="image" />
+                                <img src="@/assets/images/partner/reseller.png" alt="Reseller image" class="image" />
                             </div>
                         </div>
                         <div class="card-body">
                             <div class="body-head">
-                                <img src="./assets/images/partner/before-right.png" class="arrow-img" />
+                                <img src="@/assets/images/partner/before-right.png" class="arrow-img" />
                                 <p class="card-desc">
                                     Sell Nextash ERP & Grow Your Business
                                 </p>
-                                <img src="./assets/images/partner/after-right.png" class="arrow-img" />
+                                <img src="@/assets/images/partner/after-right.png" class="arrow-img" />
                             </div>
                             <div class="body-desc">
                                 <div class="card-title">
@@ -524,19 +306,19 @@
                                 </h2>
                                 <ul class="menu">
                                     <li class="list-item">
-                                        <img src="./assets/images/partner/mdi_color.png" alt="Dollar Icon" />
+                                        <img src="@/assets/images/partner/mdi_color.png" alt="Dollar Icon" />
                                         <p class="card-desc">
                                             White-label & branding options
                                         </p>
                                     </li>
                                     <li class="list-item">
-                                        <img src="./assets/images/partner/gala_chart.svg" alt="Chart Icon" />
+                                        <img src="@/assets/images/partner/gala_chart.svg" alt="Chart Icon" />
                                         <p class="card-desc">
                                             Dedicated sales & marketing support
                                         </p>
                                     </li>
                                     <li class="list-item">
-                                        <img src="./assets/images/partner/dollar_icon.png" alt="Building Icon" />
+                                        <img src="@/assets/images/partner/dollar_icon.png" alt="Building Icon" />
                                         <p class="card-desc">
                                             Earn commissions on every sale
                                         </p>
@@ -556,17 +338,17 @@
                     <article class="card partnership-card">
                         <div class="card-head">
                             <div class="card-image image-zoom">
-                                <img src="./assets/images/partner/initiative.png" alt="Initiative image"
+                                <img src="@/assets/images/partner/initiative.png" alt="Initiative image"
                                     class="image" />
                             </div>
                         </div>
                         <div class="card-body">
                             <div class="body-head">
-                                <img src="./assets/images/partner/before-right.png" class="arrow-img" />
+                                <img src="@/assets/images/partner/before-right.png" class="arrow-img" />
                                 <p class="card-desc">
                                     Refer Businesses & Earn Commission on Every Lead
                                 </p>
-                                <img src="./assets/images/partner/after-right.png" class="arrow-img" />
+                                <img src="@/assets/images/partner/after-right.png" class="arrow-img" />
                             </div>
                             <div class="body-desc">
                                 <div class="card-title">
@@ -585,20 +367,20 @@
                                 </h2>
                                 <ul class="menu">
                                     <li class="list-item">
-                                        <img src="./assets/images/partner/dollar_icon.png" alt="Dollar Icon" />
+                                        <img src="@/assets/images/partner/dollar_icon.png" alt="Dollar Icon" />
                                         <p class="card-desc">
                                             No upfront investment required
                                         </p>
                                     </li>
                                     <li class="list-item">
-                                        <img src="./assets/images/partner/qlementine-icons_money-16.png"
+                                        <img src="@/assets/images/partner/qlementine-icons_money-16.png"
                                             alt="Chart Icon" />
                                         <p class="card-desc">
                                             Earn commissions for every successful referral
                                         </p>
                                     </li>
                                     <li class="list-item">
-                                        <img src="./assets/images/partner/gala_chart.svg" alt="Building Icon" />
+                                        <img src="@/assets/images/partner/gala_chart.svg" alt="Building Icon" />
                                         <p class="card-desc">
                                             Get a dedicated referral tracking dashboard
                                         </p>
@@ -640,6 +422,9 @@
 </template>
 
 <script setup>
-import {  useClientsStore } from '@/stores'
-const clientsStore = useClientsStore()
+import PartnerCard from '@/components/PartnerCard.vue'
+import {  useClientsStore, usePartnersStore } from '@/stores';
+
+const clientsStore = useClientsStore();
+const partnersStore = usePartnersStore();
 </script>

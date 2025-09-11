@@ -1571,7 +1571,7 @@ body::-webkit-scrollbar-track {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
-  background-color: rgba(0, 0, 0, 0.42);
+  background-color: rgba(0, 0, 0, 0.65);
   padding: 20px 0;
   visibility: hidden;
   opacity: 0;
@@ -4321,7 +4321,7 @@ svg #airplain {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url(../../images/partner/partner-bg.png);
+  background-image: url("@/assets/images/partner/partner-bg.png");
   background-size: cover;
   background-position: center;
   opacity: 0.05;
@@ -4333,6 +4333,7 @@ svg #airplain {
   -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+  margin: 5rem 0;
 }
 @media (max-width: 1024px) {
   .partner-page .partner .partners-cards {
@@ -4361,7 +4362,7 @@ svg #airplain {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url(../../images/partner/partner-bg.png);
+  background-image: url("@/assets/images/partner/partner-bg.png");
   background-size: cover;
   background-position: center;
   opacity: 0.05;
@@ -4377,6 +4378,7 @@ svg #airplain {
   -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  margin: 5rem 0;
 }
 .partner-page .clients {
   position: relative;
@@ -4387,7 +4389,7 @@ svg #airplain {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url(../../images/partner/partner-bg.png);
+  background-image: url("@/assets/images/partner/partner-bg.png");
   background-size: cover;
   background-position: center;
   opacity: 0.05;
