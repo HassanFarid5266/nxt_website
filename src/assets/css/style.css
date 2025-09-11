@@ -3651,7 +3651,7 @@ svg #airplain {
 .faqs-layout .boxed .col-left {
   width: 50%;
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .faqs-layout .boxed .col-left {
     width: 100%;
   }
@@ -3661,7 +3661,7 @@ svg #airplain {
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .faqs-layout .boxed .col-right {
     width: 100%;
   }
