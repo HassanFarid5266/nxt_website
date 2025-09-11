@@ -4,6 +4,7 @@ export { useEmployeesStore } from './employees.js'
 export { useJobsStore } from './jobs.js'
 export { useBlogsStore } from './blogs.js'
 export { useProjectsStore } from './projects.js'
+export { useProductsStore } from './products.js'
 export { useTestimonialsStore } from './testimonials.js'
 export { useClientsStore } from './clients.js'
 export { useUIStore } from './ui.js'
@@ -16,6 +17,7 @@ export const useMainStore = () => {
     jobs: useJobsStore(),
     blogs: useBlogsStore(),
     projects: useProjectsStore(),
+    products: useProductsStore(),
     testimonials: useTestimonialsStore(),
     clients: useClientsStore(),
     ui: useUIStore(),

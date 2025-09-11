@@ -1,92 +1,145 @@
 <template>
   <main>
-    <section class="page-header">
+    <!-- HERO SECTION -->
+    <section class="page-head product-head">
       <div class="boxed">
-        <div class="page-header-content">
-          <b class="section-badge">Products</b>
-          <h1 class="section-title">Our Digital Products</h1>
-          <p class="section-desc">
-            We provide comprehensive digital products to help businesses thrive in the modern world. 
-            From web development to cloud infrastructure, we've got you covered.
-          </p>
-        </div>
+        <span class="page-badge">Our Products</span>
+        <h1 class="page-title">Next-Gen Tools for Every Industry</h1>
+        <p class="page-desc">
+          - Discover powerful, future-ready apps designed to transform every industry. From smart analytics to seamless automation, our tools help businesses innovate, scale, and succeed in the digital era.
+        </p>
       </div>
     </section>
+
+    <!----- background design ----->
+    <div class="design">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 800 800" opacity="0.21">
+            <defs>
+                <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="rrreflection-grad">
+                    <stop stop-color="#121212" stop-opacity="1" offset="45%"></stop>
+                    <stop stop-color="#ff0000" stop-opacity="1" offset="100%"></stop>
+                </linearGradient>
+                <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="rrreflection-grad-2">
+                    <stop stop-color="#ff0000" stop-opacity="1" offset="0%"></stop>
+                    <stop stop-color="#121212" stop-opacity="1" offset="45%"></stop>
+                </linearGradient>
+                <linearGradient gradientTransform="rotate(270)" x1="50%" y1="0%" x2="50%" y2="100%" id="rrreflection-grad-3">
+                    <stop stop-color="#121212" stop-opacity="1" offset="45%"></stop>
+                    <stop stop-color="#ff0000" stop-opacity="1" offset="100%"></stop>
+                </linearGradient>
+                <linearGradient gradientTransform="rotate(270)" x1="50%" y1="0%" x2="50%" y2="100%" id="rrreflection-grad-4">
+                    <stop stop-color="#ff0000" stop-opacity="1" offset="0%"></stop>
+                    <stop stop-color="#121212" stop-opacity="1" offset="45%"></stop>
+                </linearGradient>
+            </defs>
+            <g stroke-width="1" stroke="url(#rrreflection-grad)" fill="none">
+                <circle r="346.5" cx="50%" cy="0"></circle>
+                <circle r="330" cx="50%" cy="0"></circle>
+                <circle r="313.5" cx="50%" cy="0"></circle>
+                <circle r="297" cx="50%" cy="0"></circle>
+                <circle r="280.5" cx="50%" cy="0"></circle>
+                <circle r="264" cx="50%" cy="0"></circle>
+                <circle r="247.5" cx="50%" cy="0"></circle>
+                <circle r="231" cx="50%" cy="0"></circle>
+                <circle r="214.5" cx="50%" cy="0"></circle>
+                <circle r="198" cx="50%" cy="0"></circle>
+                <circle r="181.5" cx="50%" cy="0"></circle>
+                <circle r="165" cx="50%" cy="0"></circle>
+                <circle r="148.5" cx="50%" cy="0"></circle>
+                <circle r="132" cx="50%" cy="0"></circle>
+                <circle r="115.5" cx="50%" cy="0"></circle>
+                <circle r="99" cx="50%" cy="0"></circle>
+                <circle r="82.5" cx="50%" cy="0"></circle>
+                <circle r="66" cx="50%" cy="0"></circle>
+                <circle r="49.5" cx="50%" cy="0"></circle>
+                <circle r="33" cx="50%" cy="0"></circle>
+                <circle r="16.5" cx="50%" cy="0"></circle>
+            </g>
+            <g stroke-width="1" stroke="url(#rrreflection-grad-2)" fill="none">
+                <circle r="346.5" cx="50%" cy="100%"></circle>
+                <circle r="330" cx="50%" cy="100%"></circle>
+                <circle r="313.5" cx="50%" cy="100%"></circle>
+                <circle r="297" cx="50%" cy="100%"></circle>
+                <circle r="280.5" cx="50%" cy="100%"></circle>
+                <circle r="264" cx="50%" cy="100%"></circle>
+                <circle r="247.5" cx="50%" cy="100%"></circle>
+                <circle r="231" cx="50%" cy="100%"></circle>
+                <circle r="214.5" cx="50%" cy="100%"></circle>
+                <circle r="198" cx="50%" cy="100%"></circle>
+                <circle r="181.5" cx="50%" cy="100%"></circle>
+                <circle r="165" cx="50%" cy="100%"></circle>
+                <circle r="148.5" cx="50%" cy="100%"></circle>
+                <circle r="132" cx="50%" cy="100%"></circle>
+                <circle r="115.5" cx="50%" cy="100%"></circle>
+                <circle r="99" cx="50%" cy="100%"></circle>
+                <circle r="82.5" cx="50%" cy="100%"></circle>
+                <circle r="66" cx="50%" cy="100%"></circle>
+                <circle r="49.5" cx="50%" cy="100%"></circle>
+                <circle r="33" cx="50%" cy="100%"></circle>
+                <circle r="16.5" cx="50%" cy="100%"></circle>
+            </g>
+            <g stroke-width="1" stroke="url(#rrreflection-grad-3)" fill="none">
+                <circle r="346.5" cx="0" cy="50%"></circle>
+                <circle r="330" cx="0" cy="50%"></circle>
+                <circle r="313.5" cx="0" cy="50%"></circle>
+                <circle r="297" cx="0" cy="50%"></circle>
+                <circle r="280.5" cx="0" cy="50%"></circle>
+                <circle r="264" cx="0" cy="50%"></circle>
+                <circle r="247.5" cx="0" cy="50%"></circle>
+                <circle r="231" cx="0" cy="50%"></circle>
+                <circle r="214.5" cx="0" cy="50%"></circle>
+                <circle r="198" cx="0" cy="50%"></circle>
+                <circle r="181.5" cx="0" cy="50%"></circle>
+                <circle r="165" cx="0" cy="50%"></circle>
+                <circle r="148.5" cx="0" cy="50%"></circle>
+                <circle r="132" cx="0" cy="50%"></circle>
+                <circle r="115.5" cx="0" cy="50%"></circle>
+                <circle r="99" cx="0" cy="50%"></circle>
+                <circle r="82.5" cx="0" cy="50%"></circle>
+                <circle r="66" cx="0" cy="50%"></circle>
+                <circle r="49.5" cx="0" cy="50%"></circle>
+                <circle r="33" cx="0" cy="50%"></circle>
+                <circle r="16.5" cx="0" cy="50%"></circle>
+            </g>
+            <g stroke-width="1" stroke="url(#rrreflection-grad-4)" fill="none">
+                <circle r="346.5" cx="100%" cy="50%"></circle>
+                <circle r="330" cx="100%" cy="50%"></circle>
+                <circle r="313.5" cx="100%" cy="50%"></circle>
+                <circle r="297" cx="100%" cy="50%"></circle>
+                <circle r="280.5" cx="100%" cy="50%"></circle>
+                <circle r="264" cx="100%" cy="50%"></circle>
+                <circle r="247.5" cx="100%" cy="50%"></circle>
+                <circle r="231" cx="100%" cy="50%"></circle>
+                <circle r="214.5" cx="100%" cy="50%"></circle>
+                <circle r="198" cx="100%" cy="50%"></circle>
+                <circle r="181.5" cx="100%" cy="50%"></circle>
+                <circle r="165" cx="100%" cy="50%"></circle>
+                <circle r="148.5" cx="100%" cy="50%"></circle>
+                <circle r="132" cx="100%" cy="50%"></circle>
+                <circle r="115.5" cx="100%" cy="50%"></circle>
+                <circle r="99" cx="100%" cy="50%"></circle>
+                <circle r="82.5" cx="100%" cy="50%"></circle>
+                <circle r="66" cx="100%" cy="50%"></circle>
+                <circle r="49.5" cx="100%" cy="50%"></circle>
+                <circle r="33" cx="100%" cy="50%"></circle>
+                <circle r="16.5" cx="100%" cy="50%"></circle>
+            </g>
+        </svg>
+    </div>
+    <!----- background design ----->
 
     <section class="section">
       <div class="boxed">
-        <div class="row-cards">
-          <ServiceCard
-            v-for="service in services"
-            :key="service.id"
-            :title="service.title"
-            :description="service.description"
-            :icon="service.icon"
-            :icon-bg-color="service.iconBgColor"
-            :features="service.features"
-            :link="service.link"
-            :variant="service.variant"
-          />
+        <div class="">
+          <!-- <ProductCard :products="visibleProducts" /> -->
         </div>
-      </div>
-    </section>
-
-    <section class="section bg-light">
-      <div class="boxed">
-        <div class="section-header text-center">
-          <b class="section-badge">Why Choose Us</b>
-          <h2 class="section-title">Excellence in Every Project</h2>
-          <p class="section-desc">
-            We deliver exceptional results through our proven methodology and dedicated team.
-          </p>
-        </div>
-        
-        <div class="row-cards">
-          <div class="card feature" data-aos="fade-up" data-aos-duration="1000">
-            <div class="card-icon"><i class="bx bx-check-shield"></i></div>
-            <h3 class="card-title">Quality Assurance</h3>
-            <p class="card-desc">Rigorous testing and quality checks ensure your project meets the highest standards.</p>
-          </div>
-          
-          <div class="card feature" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-            <div class="card-icon"><i class="bx bx-time"></i></div>
-            <h3 class="card-title">Timely Delivery</h3>
-            <p class="card-desc">We respect deadlines and deliver projects on time, every time.</p>
-          </div>
-          
-          <div class="card feature" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-            <div class="card-icon"><i class="bx bx-support"></i></div>
-            <h3 class="card-title">24/7 Support</h3>
-            <p class="card-desc">Round-the-clock support to help you whenever you need assistance.</p>
-          </div>
-          
-          <div class="card feature" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-            <div class="card-icon"><i class="bx bx-trending-up"></i></div>
-            <h3 class="card-title">Scalable Solutions</h3>
-            <p class="card-desc">Future-proof solutions that grow with your business needs.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section cta-section bg-one">
-      <div class="boxed text-center">
-        <h2 class="section-title">Ready to Get Started?</h2>
-        <p class="section-desc">Let's discuss your project and find the perfect solution for your business.</p>
-        <router-link to="/contact-us" class="btn-contact">Get Free Consultation</router-link>
       </div>
     </section>
   </main>
 </template>
 
 <script setup>
-import ServiceCard from '@/components/ServiceCard.vue'
-const services = [
-  { id: 1, title: 'Web Development', description: 'Custom web applications built with modern technologies and best practices.', icon: 'bx bx-code-alt', iconBgColor: '#ff0000', features: ['Responsive Design', 'SEO Optimized', 'Fast Performance', 'Modern UI/UX'], link: '/services/web-development', variant: 'featured' },
-  { id: 2, title: 'Mobile App Development', description: 'Native and cross-platform mobile applications for iOS and Android.', icon: 'bx bx-mobile-alt', iconBgColor: '#007bff', features: ['Native Performance', 'Cross-platform', 'App Store Ready', 'Push Notifications'], link: '/services/mobile-app-development', variant: 'default' },
-  { id: 3, title: 'Cloud Solutions', description: 'Scalable cloud infrastructure and migration services.', icon: 'bx bx-cloud', iconBgColor: '#28a745', features: ['AWS/Azure/GCP', 'Auto-scaling', 'Cost Optimization', 'Security First'], link: '/services/cloud-hosting', variant: 'default' },
-  { id: 4, title: 'DevOps Services', description: 'Streamline your development and deployment processes.', icon: 'bx bx-cog', iconBgColor: '#6f42c1', features: ['CI/CD Pipelines', 'Infrastructure as Code', 'Monitoring', 'Automation'], link: '/services/devops', variant: 'default' },
-  { id: 5, title: 'Digital Marketing', description: 'Data-driven digital marketing strategies to grow your business.', icon: 'bx bx-bullhorn', iconBgColor: '#fd7e14', features: ['SEO/SEM', 'Social Media', 'Content Marketing', 'Analytics'], link: '/services/digital-marketing', variant: 'default' },
-  { id: 6, title: 'UI/UX Design', description: 'Beautiful and intuitive user interfaces that enhance user experience.', icon: 'bx bx-palette', iconBgColor: '#e83e8c', features: ['User Research', 'Wireframing', 'Prototyping', 'User Testing'], link: '/services/graphics-designing', variant: 'default' }
-]
+// import ProductCard from '@/components/ProductCard.vue'
+// import { useProductsStore } from '@/stores'
+// const productsStore = useProductsStore()
 </script>

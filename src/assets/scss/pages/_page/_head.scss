@@ -1,5 +1,5 @@
 .page-head {
-  background-image: url(#{assets("images","bg-swirl-3.webp")});
+  background-image: url("@/assets/images/bg-swirl-3.webp");
   background-position: bottom right;
   background-size: cover;
   padding-top: 8rem;
@@ -128,4 +128,11 @@
       display: block;
     }
   }
+
+  &.product-head {
+    text-align: center;
+    .page-badge {
+      margin-bottom: 50px;
+    }
+  } 
 }
