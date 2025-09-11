@@ -1,4 +1,66 @@
 .card-product {
+  --card-bg: #201f24cf;
+  --card-br: 17px;
   flex-direction: row;
-  gap: 20px;
+  .featured-badge {
+    width: 310px;
+    height: 286px;
+    background-image: url("@/assets/images/products/image 128.png");
+    background-repeat: no-repeat;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    top: -7%;
+    left: -3%;
+    z-index: 38;
+    .badge-text {
+      position: relative;
+      bottom: -5%;
+      left: 5%;
+      display: flex;
+      align-items: center;
+
+    }
+  }
+
+  .card-content {
+    padding: 20px;
+    width: 50%;
+    .card-title {
+      font-size: 2.2rem;
+      font-weight: 600;
+      margin-top: 30px;
+    }
+    .desc {
+      color: #878787;
+      font-size: 0.8rem;
+      margin-bottom: 10px;
+    }
+    .card-desc {
+      color: #acb6c0;
+      font-size: 1rem;
+    }
+    strong {
+      color: var(--text);
+    }
+    span {
+      color: var(--primary);
+    }
+  }
+  .right {
+    width: 50%;
+    height: 100%;
+    background-color: var(--primary);
+    border-radius: 0 17px 17px 0;
+    .card-image {
+      height: 100%;
+      background-color: transparent;
+      .image {
+        background-color: transparent;
+        width: 250px;
+      }
+    }
+  }
 }

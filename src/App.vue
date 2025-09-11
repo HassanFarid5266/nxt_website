@@ -44,23 +44,23 @@ import Sidebar from '@/layout/Sidebar.vue'
 import Footer from '@/layout/Footer.vue'
 import Cta from "@/components/Cta.vue";
 
-const isLoading = ref(true)
-const loadingProgress = ref(0)
+// const isLoading = ref(true)
+// const loadingProgress = ref(0)
 
-const startLoading = () => {
-  const interval = setInterval(() => {
-    loadingProgress.value++
-    if (loadingProgress.value >= 100) {
-      clearInterval(interval)
-      setTimeout(() => {
-        isLoading.value = false
-      }, 500)
-    }
-  }, 10)
-}
+// // const startLoading = () => {
+// //   const interval = setInterval(() => {
+// //     loadingProgress.value++
+// //     if (loadingProgress.value >= 100) {
+// //       clearInterval(interval)
+// //       setTimeout(() => {
+// //         isLoading.value = false
+// //       }, 500)
+// //     }
+// //   }, 10)
+// // }
 
-onMounted(() => {
-  startLoading()
-})
+// onMounted(() => {
+//   startLoading()
+// })
 
 </script>

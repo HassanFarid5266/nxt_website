@@ -128,10 +128,10 @@
     </div>
     <!----- background design ----->
 
-    <section class="section">
+    <section class="section product-section">
       <div class="boxed">
-        <div class="">
-          <!-- <ProductCard :products="visibleProducts" /> -->
+        <div class="row-cols-2">
+          <ProductCard />
         </div>
       </div>
     </section>
@@ -139,7 +139,7 @@
 </template>
 
 <script setup>
-// import ProductCard from '@/components/ProductCard.vue'
+import ProductCard from '@/components/ProductCard.vue'
 // import { useProductsStore } from '@/stores'
 // const productsStore = useProductsStore()
 </script>

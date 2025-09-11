@@ -1,26 +1,28 @@
 <template>
-    <article class="card card-case-study" v-for="product in products" :key="product.id">
-        <div class="card-head">
+    <article class="card card-product">
+        <div class="featured-badge">
+            <span class="badge-text">✨ Featured</span>
         </div>
-        <div class="card-hoverable card-body bg-three card-product">
-            <div class="product-content">
-                <span class="card-badge">{{ product.category }}</span>
-                <h3 class="card-title">{{ product.name }}</h3>
-                <p class="card-desc">{{ product.description }}</p>
-                <router-link :to="product.link" class="btn-outline">Learn More</router-link>
+        <div class="card-content">
+            <div class="card-title">COBRE<span>X</span></div>
+            <p class="desc">Description :</p>
+            <p class="card-desc">
+                <strong>Cobre<span>X</span></strong>
+                Insights is a smart analytics and reporting app that helps businesses make better decisions
+                through
+                data. With real-time dashboards, companies can easily track their sales, revenue, and overall
+                performance in
+                one place
+            </p>
+            <div class="fcp-button">
+                <button class="btn">Learn More</button>
             </div>
-            <div class="product-image">
-                <img :src="product.image" class="image lazy-load" :alt="product.name" />
+        </div>
+        <div class="right">
+
+            <div class="card-image">
+                <img src="@/assets/images/products/Cobrex.png" class="image lazy-load" alt="Product iamge">
             </div>
         </div>
     </article>
 </template>
-
-<script setup>
-const props = defineProps({
-    products: {
-        type: Array,
-        default: () => [],
-    },
-})
-</script>

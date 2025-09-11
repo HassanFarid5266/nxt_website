@@ -54,7 +54,8 @@
   }
 }
 
-.swiper-button-prev:after, .swiper-button-next:after {
+.swiper-button-prev:after,
+.swiper-button-next:after {
   position: absolute;
   color: var(--text);
   z-index: 999;
@@ -77,5 +78,29 @@
 .swiper-button-next {
   &::after {
     content: "\ebe6" !important;
+  }
+}
+
+.fcp-button {
+  padding: 10px;
+  width: 165px;
+  border: 2px solid var(--primary);
+  transition: all 0.7s ease-in-out;
+
+  .btn {
+    width: 100%;
+    background-color: var(--primary);
+    border-radius: 0px;
+    position: relative;
+    transition: all 0.7s ease-in-out;
+  }
+
+  &:hover {
+    background-color: var(--primary);
+    border-radius: 4px;
+
+    .btn {
+      box-shadow: none;
+    }
   }
 }
