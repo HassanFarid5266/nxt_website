@@ -130,7 +130,7 @@
 
     <section class="section product-section">
       <div class="boxed">
-        <div class="row-cols-2">
+        <div class="row-cols-3">
           <ProductCard />
         </div>
       </div>

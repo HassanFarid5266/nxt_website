@@ -1395,12 +1395,15 @@ body::-webkit-scrollbar-track {
 }
 
 .card-product {
+  --card-w: 100%;
+  --card-h: 350;
   --card-bg: #201f24cf;
   --card-br: 17px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  gap: 20px;
 }
 .card-product .featured-badge {
   width: 310px;
@@ -1413,7 +1416,7 @@ body::-webkit-scrollbar-track {
   text-transform: uppercase;
   position: absolute;
   top: -7%;
-  left: -3%;
+  left: -4%;
   z-index: 38;
 }
 .card-product .featured-badge .badge-text {
@@ -1429,7 +1432,7 @@ body::-webkit-scrollbar-track {
 }
 .card-product .card-content {
   padding: 20px;
-  width: 50%;
+  width: 60%;
 }
 .card-product .card-content .card-title {
   font-size: 2.2rem;
@@ -1447,15 +1450,17 @@ body::-webkit-scrollbar-track {
 }
 .card-product .card-content strong {
   color: var(--text);
+  font-weight: 500;
 }
 .card-product .card-content span {
   color: var(--primary);
 }
 .card-product .right {
-  width: 50%;
+  width: 40%;
   height: 100%;
   background-color: var(--primary);
   border-radius: 0 17px 17px 0;
+  margin-left: auto;
 }
 .card-product .right .card-image {
   height: 100%;
@@ -1464,6 +1469,11 @@ body::-webkit-scrollbar-track {
 .card-product .right .card-image .image {
   background-color: transparent;
   width: 250px;
+  -webkit-filter: drop-shadow(0px 0px 17px #6B0000);
+          filter: drop-shadow(0px 0px 17px #6B0000);
+  position: absolute;
+  right: 0px;
+  top: 0px;
 }
 
 .card-partner {
@@ -3949,6 +3959,9 @@ svg #airplain {
   text-align: center;
 }
 
+.product-section {
+  margin-bottom: 150px;
+}
 .product-section .boxed {
   --box-width: 90%;
 }
@@ -4376,6 +4389,10 @@ svg #airplain {
   --text-ellipsis-clamp: 3;
 }
 
+.text-ellipsis-5 {
+  --text-ellipsis-clamp: 5;
+}
+
 .align-center {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -4402,3 +4419,4 @@ a.router-link-exact-active {
   color: inherit;
   text-decoration: none;
 }
+/*# sourceMappingURL=style.css.map */
