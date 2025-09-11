@@ -131,7 +131,11 @@
     <section class="section product-section">
       <div class="boxed">
         <div class="row-cols-3">
-          <ProductCard />
+          <ProductCard
+            v-for="item in sortedProducts"
+            :key="item.id"
+            :product="item"
+          />
         </div>
       </div>
     </section>
@@ -140,6 +144,7 @@
 
 <script setup>
 import ProductCard from '@/components/ProductCard.vue'
-// import { useProductsStore } from '@/stores'
-// const productsStore = useProductsStore()
+import { useProductsStore } from '@/stores'
+const productStore = useProductsStore();
+const sortedProducts = productStore.sortedProducts;
 </script>
