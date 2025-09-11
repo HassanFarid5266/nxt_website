@@ -1,0 +1,94 @@
+.card-partners {
+  --card-w: 100%;
+  --card-h: 400px;
+  --card-head-p: 0px;
+  --card-body-p: 0px;
+  --card-foot-p: 0px;
+  --card-head-h: 100%;
+  --card-image-h: 100%;
+  --card-bs: 0 0 56px 0 rgba(255, 0, 0, 0.2);
+  display: block;
+  overflow: hidden;
+
+  &:hover {
+    --card-bc: var(--primary);
+    .card-body {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0px);
+    }
+    .explore {
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+  .card-head {
+    .card-image {
+      .image {
+        object-position: unset;
+      }
+      .explore {
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 0.6s ease-in-out;
+        .exp {
+          width: 50px;
+          height: 50px;
+          border: 2px solid #656565;
+          rotate: 45deg;
+          position: absolute;
+          bottom: -35px;
+          left: 10px;
+          z-index: -1;
+        }
+        h2 {
+          letter-spacing: 2px;
+          background-color: transparent;
+          text-shadow: 1px 1px 2px rgba(253, 7, 7, 1);
+        }
+      }
+    }
+  }
+  .card-body {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    background-color: rgba(0, 0, 0, 0.42);
+    padding: 20px 0;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.6s ease-in-out;
+    .card-desc {
+      @media (max-width: 1440px) {
+        font-size: clamp(14px, 80vw, 14px);
+      }
+      @media (max-width: screen-size(xl)) {
+        font-size: clamp(14px, 80vw, 1rem);
+      }
+      span {
+        color: var(--primary);
+      }
+    }
+    .social-links {
+      border: none;
+      border-radius: 0px;
+      box-shadow: none;
+      .social-icon {
+        background-color: transparent;
+        border: 1px solid #4e4e4e;
+        margin: 0 5px;
+        padding: 6px;
+        font-size: 20px;
+        &:hover {
+          color: var(--primary);
+        }
+      }
+    }
+  }
+}
