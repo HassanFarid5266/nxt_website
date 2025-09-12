@@ -9,31 +9,28 @@
         </div>
       </div>
     </div>
-
     <div class="card-body">
       <div class="card-title">{{ partner.name }}</div>
       <div class="card-desc">
         {{ partner.role }} <span>|</span> {{ partner.company }}
       </div>
       <div class="social-links">
-        <a v-if="partner.links.github" 
+        <a v-if="partner.links?.github" 
            :href="partner.links.github" 
            class="bx bxl-github social-icon" 
            target="_blank"></a>
 
-        <a v-if="partner.links.linkedin" 
+        <a v-if="partner.links?.linkedin" 
            :href="partner.links.linkedin" 
            class="bx bxl-linkedin social-icon" 
            target="_blank"></a>
 
-        <a v-if="partner.links.instagram" 
+        <a v-if="partner.links?.instagram" 
            :href="partner.links.instagram" 
            class="bx bxl-instagram social-icon" 
            target="_blank"></a>
       </div>
     </div>
-
-    <div class="card-foot"></div>
   </article>
 </template>
 
@@ -44,4 +41,5 @@ defineProps({
     required: true,
   },
 });
+
 </script>

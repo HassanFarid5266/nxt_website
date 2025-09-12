@@ -1,4 +1,18 @@
 <template>
+    <!-- <section class="page-head">
+        <div class="boxed">
+            <span class="page-badge">Our Trusted Partnerships</span>
+            <h1 class="page-title">Empowering Partnerships, Elevating Possibilities.</h1>
+            <p class="page-desc">
+                At NexTash, we believe in the power of collaboration and synergy. Our partnerships are the cornerstone
+                of our success, driving innovation and delivering exceptional results to our clients. Together, we
+                leverage
+                expertise, technology, and creativity to unlock new opportunities and achieve remarkable outcomes. Join
+                us
+                on our journey as we shape the future of IT together.
+            </p>
+        </div>
+    </section> -->
     <main class="partner-page">
         <!-- WELCOME -->
         <section class="welcome">
@@ -31,143 +45,41 @@
                     <img src="@/assets/images/partner/nxt_logo.png" alt="Nextash Logo" class="logo" />
                 </div>
                 <div class="welcome-slider">
+                    <!-- Slider 1 -->
                     <div class="slider">
-                        <div class="swiper partner_swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="image">
-                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
-                                    </div>
+                        <Swiper :modules="[Autoplay]" :slides-per-view="5" :loop="true"
+                            :autoplay="{ delay: 2000, disableOnInteraction: false }" class="partner_swiper">
+                            <SwiperSlide v-for="partner in partners" :key="partner.id">
+                                <div class="image">
+                                    <img :src="partner.image" alt="Partner Image" class="img" />
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="image">
-                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="image">
-                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="image">
-                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="image">
-                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="image">
-                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                            </SwiperSlide>
+                        </Swiper>
                     </div>
-                    <div dir="rtl" class="slider">
-                        <div class="swiper partner_swiper-2">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="image">
-                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
-                                    </div>
+
+                    <!-- Slider 2 (RTL) -->
+                    <div class="slider" dir="rtl">
+                        <Swiper :modules="[Autoplay]" :slides-per-view="5" :loop="true"
+                            :autoplay="{ delay: 2200, reverseDirection: true, disableOnInteraction: false }"
+                            class="partner_swiper-2">
+                            <SwiperSlide v-for="partner in partners" :key="'rtl-' + partner.id">
+                                <div class="image">
+                                    <img :src="partner.image" alt="Partner Image" class="img" />
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="image">
-                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="image">
-                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="image">
-                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="image">
-                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="image">
-                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="image">
-                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="image">
-                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="image">
-                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="image">
-                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="image">
-                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="image">
-                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                            </SwiperSlide>
+                        </Swiper>
                     </div>
+
+                    <!-- Slider 3 -->
                     <div class="slider">
-                        <div class="swiper partner_swiper-3">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="image">
-                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
-                                    </div>
+                        <Swiper :modules="[Autoplay]" :slides-per-view="5" :loop="true"
+                            :autoplay="{ delay: 2500, disableOnInteraction: false }" class="partner_swiper-3">
+                            <SwiperSlide v-for="partner in partners" :key="'s3-' + partner.id">
+                                <div class="image">
+                                    <img :src="partner.image" alt="Partner Image" class="img" />
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="image">
-                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="image">
-                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="image">
-                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="image">
-                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="image">
-                                        <img src="@/assets/images/partner/ammar.png" alt="Partner Image" class="img" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                            </SwiperSlide>
+                        </Swiper>
                     </div>
                 </div>
             </div>
@@ -181,11 +93,7 @@
             </div>
             <div class="boxed">
                 <div class="partners-cards">
-                    <PartnerCard 
-                        v-for="partner in partnersStore.partners" 
-                        :key="partner.id" 
-                        :partner="partner" 
-                    />
+                    <PartnerCard v-for="partner in partnersStore.partners" :key="partner.id" :partner="partner" />
                 </div>
             </div>
         </section>
@@ -402,28 +310,31 @@
         </section>
         <!-- PARTNERSHIP -->
         <!-- CLIENTS -->
-		<section class="clients">
-			<div class="boxed">
+        <section class="clients">
+            <div class="boxed">
                 <div class="section-center">
                     <P class="section-badge"> <span>A</span>ffiliate <span>A</span>gencies </P>
                     <h3 class="section-title"><span>N</span>exTash Affiliated <span>A</span>gencies</h3>
                 </div>
-				<br><br>
-				<article class="row-clients">
-					<div class="col" v-for="(logo, index) in clientsStore.getClients" :key="index" data-aos-duration="1000"
-						data-aos="fade-up" data-aos-once="true" data-aos-easing="ease-in-out">
-						<img :src="logo" class="image-full grayscale" alt="Client Logo" />
-					</div>
-				</article>
-			</div>
-		</section>
-		<!-- CLIENTS -->
+                <br><br>
+                <article class="row-clients">
+                    <div class="col" v-for="(logo, index) in clientsStore.getClients" :key="index"
+                        data-aos-duration="1000" data-aos="fade-up" data-aos-once="true" data-aos-easing="ease-in-out">
+                        <img :src="logo" class="image-full grayscale" alt="Client Logo" />
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!-- CLIENTS -->
     </main>
 </template>
 
 <script setup>
 import PartnerCard from '@/components/PartnerCard.vue'
-import {  useClientsStore, usePartnersStore } from '@/stores';
+import { useClientsStore, usePartnersStore, usePartnerSwiperStore } from '@/stores';
+
+const partnerSwiperStore = usePartnerSwiperStore();
+const partners = partnerSwiperStore.partners;
 
 const clientsStore = useClientsStore();
 const partnersStore = usePartnersStore();

@@ -1,3 +1,5 @@
+// import PartnerSwiper from '../components/PartnerSwiper.vue'
+
 // Main store index file - exports all stores
 export { useSidebarStore } from './sidebar.js'
 export { useEmployeesStore } from './employees.js'
@@ -10,6 +12,7 @@ export { useClientsStore } from './clients.js'
 export { useUIStore } from './ui.js'
 export { useFaqsStore } from './faqs.js'
 export { usePartnersStore } from './partner.js'
+export { usePartnerSwiperStore } from './partnerSwiper.js'
 
 export const useMainStore = () => {
   return {
@@ -23,6 +26,7 @@ export const useMainStore = () => {
     clients: useClientsStore(),
     ui: useUIStore(),
     faqs: useFaqsStore(),
-    partner: usePartnersStore()
+    partner: usePartnersStore(),
+    PartnerSwiper: usePartnerSwiperStore(),
   }
 }
