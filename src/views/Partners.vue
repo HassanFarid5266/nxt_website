@@ -332,6 +332,8 @@
 <script setup>
 import PartnerCard from '@/components/PartnerCard.vue'
 import { useClientsStore, usePartnersStore, usePartnerSwiperStore } from '@/stores';
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import { Autoplay } from 'swiper/modules';
 
 const partnerSwiperStore = usePartnerSwiperStore();
 const partners = partnerSwiperStore.partners;
